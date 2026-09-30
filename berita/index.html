@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Berita &amp; Insight — Qola</title>
+<meta name="description" content="Berita dan artikel terbaru dari Qola seputar media intelligence, tren media, dan isu yang sedang dipantau.">
+<meta name="theme-color" content="#122314">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/qola.css">
+</head>
+<body>
+<script>document.documentElement.classList.add('js');</script>
+
+<header class="nav" id="nav">
+  <div class="nav-bar">
+    <div class="brand">
+      <a href="../Qola.html" class="logo" aria-label="Qola, ke beranda">
+        <img src="../logo_qola.png" alt="Qola Media Intelligence" width="887" height="365">
+      </a>
+    </div>
+    <nav class="nav-links" id="nav-links" aria-label="Utama">
+      <a href="../Qola.html#insight">Solusi</a>
+      <a href="../Qola.html#cara-kerja">Cara kerja</a>
+      <div class="nav-drop">
+        <button type="button" class="nav-drop-btn" aria-expanded="false" aria-controls="drop-produk">
+          Produk
+          <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m2 3.5 3 3 3-3"/></svg>
+        </button>
+        <div class="drop-panel" id="drop-produk">
+          <div class="drop-menu">
+            <a class="drop-item" href="../produk/index.html#monitoring-360">
+              <span class="drop-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h6M7 12h10M7 16h10"/></svg></span>
+              <span><b>Monitoring 360°</b><small>Berita, media sosial, dan media daerah dalam satu feed</small></span>
+            </a>
+            <a class="drop-item" href="../produk/index.html#analisis-sentimen">
+              <span class="drop-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 14.5c.9 1.2 2.1 1.8 3.5 1.8s2.6-.6 3.5-1.8M9 9.5h.01M15 9.5h.01"/></svg></span>
+              <span><b>Analisis Sentimen</b><small>Sentimen Bahasa Indonesia, slang, dan bahasa daerah</small></span>
+            </a>
+            <a class="drop-item" href="../produk/index.html#peringatan-dini">
+              <span class="drop-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15z"/><path d="M10 21h4"/></svg></span>
+              <span><b>Peringatan Dini</b><small>Alert saat isu dan sentimen negatif mulai naik</small></span>
+            </a>
+            <a class="drop-item" href="../produk/index.html#brief-laporan">
+              <span class="drop-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M9 17v-3M12 17v-5M15 17v-2"/></svg></span>
+              <span><b>Brief &amp; Laporan</b><small>Executive summary dan laporan siap pakai</small></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <a href="../Qola.html#fitur">Kenapa Qola</a>
+      <a href="../Qola.html#harga">Harga</a>
+      <a href="../Qola.html#faq">FAQ</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="#" class="btn-signin">Masuk</a>
+      <a href="../Qola.html#mulai" class="btn btn-sprout btn-sm">Coba gratis</a>
+      <button class="menu-btn" id="menu-btn" aria-label="Buka menu" aria-expanded="false" aria-controls="nav-links">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 5h12M2 11h12"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="section dark pp-hero short" aria-labelledby="news-title">
+  <div class="orb orb-a" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="pp-head">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="../Qola.html">Beranda</a><span aria-hidden="true">/</span>
+        <span aria-current="page">Berita</span>
+      </nav>
+      <h1 class="display" id="news-title">Berita &amp; <span class="accent">insight</span>.</h1>
+      <p class="lede">Tren media, isu yang sedang dipantau, dan kabar terbaru dari Qola.</p>
+    </div>
+  </div>
+</section>
+
+<!-- All articles from data/news.js, rendered by js/news.js -->
+<section class="section light" aria-label="Semua artikel">
+  <div class="wrap">
+    <div class="news-filter" data-news-filter role="group" aria-label="Filter kategori" hidden></div>
+    <div class="news-grid all" data-news data-news-base="../"></div>
+    <p class="news-note" data-news-note>Placeholder: belum ada artikel. Tambahkan artikel di <code>data/news.js</code>, dan semuanya akan tampil di halaman ini, diurutkan dari yang terbaru.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer dark">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../Qola.html" class="logo"><img src="../logo_qola.png" alt="Qola Media Intelligence" width="887" height="365"></a>
+        <p>Media intelligence oleh PT Abhipraya. Dibangun di Jakarta, untuk Indonesia.</p>
+      </div>
+      <div>
+        <h4>Produk</h4>
+        <ul><li><a href="../produk/index.html#monitoring-360">Monitoring 360°</a></li><li><a href="../produk/index.html#analisis-sentimen">Analisis Sentimen</a></li><li><a href="../produk/index.html#peringatan-dini">Peringatan Dini</a></li><li><a href="../produk/index.html#brief-laporan">Brief &amp; Laporan</a></li><li><a href="../Qola.html#harga">Harga</a></li></ul>
+      </div>
+      <div>
+        <h4>Perusahaan</h4>
+        <ul><li><a href="#">Tentang Abhipraya</a></li><li><a href="#">Karier</a></li><li><a href="index.html" aria-current="page">Berita</a></li><li><a href="#">Media</a></li></ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul><li><a href="#">Kebijakan privasi</a></li><li><a href="#">Kepatuhan UU PDP</a></li><li><a href="#">Template MSA</a></li><li><a href="#">e-Katalog LKPP</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 PT Abhipraya</span>
+      <span>Semua data tersimpan di server Indonesia</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../data/news.js"></script>
+<script src="../js/news.js"></script>
+<script src="../js/site.js"></script>
+</body>
+</html>
