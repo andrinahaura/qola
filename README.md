@@ -6,10 +6,10 @@ Marketing website for **Qola**, a media intelligence platform built for Indonesi
 
 | File | Description |
 |------|-------------|
-| `Qola.html` | Main landing page (Bahasa Indonesia). Shows each product as a quick view card whose "Learn More" link opens the product page at that product. |
-| `produk/index.html` | Product page with the full content of all four products. Each product has an anchor (`#monitoring-360`, `#analisis-sentimen`, `#peringatan-dini`, `#brief-laporan`) that the sticky anchor bar, the Produk dropdown, and the quick view cards link to. |
+| `Qola.html` | Main landing page (Bahasa Indonesia), laid out after the Bevel reference in `design.md`: sky hero with laptop and phone mockups, product cards, feature cards, the live panel, use cases, pricing, FAQ, and news. Links to each product open the product page at that product. |
+| `produk/index.html` | Product page with the full content of all four products. Each product has an anchor (`#monitoring-360`, `#analisis-sentimen`, `#peringatan-dini`, `#brief-laporan`) that the sticky anchor bar and the landing page link to. |
 | `css/qola.css` | Shared stylesheet for the landing page and product pages. |
-| `js/site.js` | Shared script: floating nav, Produk dropdown, scroll spy, reveal on scroll. |
+| `js/site.js` | Shared script: floating nav, mobile menu, optional Produk dropdown, scroll spy, reveal on scroll. |
 | `berita/index.html` | News page listing every article, with a category filter. The landing page's "View All News" button links here. |
 | `data/news.js` | Article list for the news section and news page. Field descriptions are at the top of the file. |
 | `js/news.js` | Renders articles from `data/news.js`. Shows labelled placeholders while the list is empty. |

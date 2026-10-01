@@ -1,32 +1,36 @@
-/* Shared by every page: floating nav, Produk dropdown, scroll spy, reveal on scroll */
+/* Shared by every page: floating nav, optional Produk dropdown, scroll spy, reveal on scroll */
 (function () {
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var nav = document.getElementById('nav');
   var menuBtn = document.getElementById('menu-btn');
   var drop = nav.querySelector('.nav-drop');
-  var dropBtn = drop.querySelector('.nav-drop-btn');
+  var dropBtn = drop && drop.querySelector('.nav-drop-btn');
   var lastY = window.scrollY;
 
-  /* Produk dropdown */
+  /* Produk dropdown (only on pages whose nav has one) */
   var hoverMode = window.matchMedia('(hover: hover) and (min-width: 901px)');
   function setDrop(open) {
+    if (!drop) return;
     drop.classList.toggle('open', open);
     dropBtn.setAttribute('aria-expanded', open);
   }
-  dropBtn.addEventListener('click', function (e) {
-    // A mouse click after hovering keeps the menu open; keyboard and touch toggle it
-    if (hoverMode.matches && e.detail > 0) setDrop(true);
-    else setDrop(!drop.classList.contains('open'));
-  });
-  drop.addEventListener('mouseenter', function () { if (hoverMode.matches) setDrop(true); });
-  drop.addEventListener('mouseleave', function () { if (hoverMode.matches) setDrop(false); });
-  drop.addEventListener('focusout', function (e) { if (!drop.contains(e.relatedTarget)) setDrop(false); });
-  document.addEventListener('click', function (e) { if (!drop.contains(e.target)) setDrop(false); });
-  document.addEventListener('keydown', function (e) {
-    if (e.key !== 'Escape' || !drop.classList.contains('open')) return;
-    setDrop(false);
-    dropBtn.focus();
-  });
+  if (drop) initDrop();
+  function initDrop() {
+    dropBtn.addEventListener('click', function (e) {
+      // A mouse click after hovering keeps the menu open; keyboard and touch toggle it
+      if (hoverMode.matches && e.detail > 0) setDrop(true);
+      else setDrop(!drop.classList.contains('open'));
+    });
+    drop.addEventListener('mouseenter', function () { if (hoverMode.matches) setDrop(true); });
+    drop.addEventListener('mouseleave', function () { if (hoverMode.matches) setDrop(false); });
+    drop.addEventListener('focusout', function (e) { if (!drop.contains(e.relatedTarget)) setDrop(false); });
+    document.addEventListener('click', function (e) { if (!drop.contains(e.target)) setDrop(false); });
+    document.addEventListener('keydown', function (e) {
+      if (e.key !== 'Escape' || !drop.classList.contains('open')) return;
+      setDrop(false);
+      dropBtn.focus();
+    });
+  }
 
   /* Scroll spy: a nav item stays active across every section of its chapter (sections share data-nav="<id>").
      Links point at "#<id>"; the Produk button names its chapter in data-spy. */

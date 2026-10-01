@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Qola — Media Intelligence untuk Indonesia</title>
 <meta name="description" content="Qola memantau 2.847 sumber media Indonesia dan memberi tahu tim humas saat isu mulai naik, sebelum viral.">
-<meta name="theme-color" content="#122314">
+<meta name="theme-color" content="#ffffff">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/qola.css">
 </head>
 <body>
@@ -16,50 +16,19 @@
 
 <header class="nav" id="nav">
   <div class="nav-bar">
-    <div class="brand">
-      <a href="#top" class="logo" aria-label="Qola, ke atas">
-        <img src="logo_qola.png" alt="Qola Media Intelligence" width="887" height="365">
-      </a>
-      <!-- <span class="badge sprout">Baru</span> -->
-    </div>
+    <a href="#top" class="logo" aria-label="Qola, ke atas">
+      <img src="logo_qola.png" alt="Qola Media Intelligence" width="887" height="365">
+    </a>
     <nav class="nav-links" id="nav-links" aria-label="Utama">
-      <a href="#insight">Solusi</a>
-      <a href="#cara-kerja">Cara kerja</a>
-      <div class="nav-drop">
-        <button type="button" class="nav-drop-btn" data-spy="produk" aria-expanded="false" aria-controls="drop-produk">
-          Produk
-          <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m2 3.5 3 3 3-3"/></svg>
-        </button>
-        <div class="drop-panel" id="drop-produk">
-          <div class="drop-menu">
-            <a class="drop-item" href="produk/index.html#monitoring-360">
-              <span class="drop-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h6M7 12h10M7 16h10"/></svg></span>
-              <span><b>Monitoring 360°</b><small>Berita, media sosial, dan media daerah dalam satu feed</small></span>
-            </a>
-            <a class="drop-item" href="produk/index.html#analisis-sentimen">
-              <span class="drop-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 14.5c.9 1.2 2.1 1.8 3.5 1.8s2.6-.6 3.5-1.8M9 9.5h.01M15 9.5h.01"/></svg></span>
-              <span><b>Analisis Sentimen</b><small>Sentimen Bahasa Indonesia, slang, dan bahasa daerah</small></span>
-            </a>
-            <a class="drop-item" href="produk/index.html#peringatan-dini">
-              <span class="drop-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15z"/><path d="M10 21h4"/></svg></span>
-              <span><b>Peringatan Dini</b><small>Alert saat isu dan sentimen negatif mulai naik</small></span>
-            </a>
-            <a class="drop-item" href="produk/index.html#brief-laporan">
-              <span class="drop-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M9 17v-3M12 17v-5M15 17v-2"/></svg></span>
-              <span><b>Brief &amp; Laporan</b><small>Executive summary dan laporan siap pakai</small></span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <a href="#fitur">Kenapa Qola</a>
+      <a href="produk/index.html">Produk</a>
       <a href="#harga">Harga</a>
-      <a href="#faq">FAQ</a>
+      <a href="berita/index.html">Berita</a>
+      <a href="#" class="nav-signin">Masuk</a>
     </nav>
     <div class="nav-actions">
-      <a href="#" class="btn-signin">Masuk</a>
-      <a href="#mulai" class="btn btn-sprout btn-sm">Coba gratis</a>
+      <a href="mailto:info@qola.id?subject=Request%20demo%20Qola" class="btn btn-dark btn-sm">Request Demo</a>
       <button class="menu-btn" id="menu-btn" aria-label="Buka menu" aria-expanded="false" aria-controls="nav-links">
-        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 5h12M2 11h12"/></svg>
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 5h12M2 11h12"/></svg>
       </button>
     </div>
   </div>
@@ -67,215 +36,165 @@
 
 <main id="top">
 
-<!-- Hero -->
-<section class="hero dark">
-  <div class="orb orb-a" aria-hidden="true"></div>
-  <div class="orb orb-b" aria-hidden="true"></div>
-  <div class="wrap hero-inner">
-    <!-- <a href="#simulasi" class="announce">Baru: <span class="accent">crisis brief dalam 8 bahasa daerah</span>
-      <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4.5 2.5 8 6l-3.5 3.5"/></svg>
-    </a> -->
-    <h1 class="display">Ubah percakapan menjadi <span class="accent">insight</span> yang bisa ditindaklanjuti.</h1>
+<!-- Hero: full-height sky field, centered copy, devices fading into the bottom edge -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-copy">
+    <h1 class="display" id="hero-title">Ubah percakapan menjadi insight yang bisa ditindaklanjuti.</h1>
     <p class="lede">Qola membantu organisasi memantau percakapan media, memahami sentimen, dan menemukan isu yang berkembang, lalu mengubah data menjadi insight untuk mendukung pengambilan keputusan.</p>
-    <div class="hero-cta">
-      <a href="mailto:info@qola.id?subject=Request%20demo%20Qola" class="btn btn-sprout">Request Demo</a>
-      <a href="#insight" class="btn btn-ghost">
-        Explore QOLA
-        <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5"/></svg>
-      </a>
-    </div>
-    <!-- <p class="hero-live"><span class="live-dot"></span>Memantau <strong class="num" id="src-count">2.847</strong> sumber media Indonesia</p> -->
-    <!-- Logo klien tidak diulang di sini: section Klien tepat di bawah hero sudah menampilkannya. -->
-    <p class="trust">Dipakai 40+ instansi pemerintah dan 120+ brand nasional</p>
+    <a href="mailto:info@qola.id?subject=Request%20demo%20Qola" class="btn btn-dark">Request Demo</a>
+    <p class="hero-proof">Dipakai 40+ instansi pemerintah dan 120+ brand nasional</p>
+  </div>
 
-    <!-- Screenshots from the Qola dashboard (dev-dashboard-v2.qola.id, Jul–Sep 2026), header cropped out -->
-    <div class="showcase reveal">
-      <figure class="mock mock-rear left shot" aria-hidden="true">
-        <img src="assets/hero/sentimen.jpg" alt="" width="1008" height="742" loading="lazy">
-      </figure>
-      <figure class="mock mock-rear right shot" aria-hidden="true">
-        <img src="assets/hero/kategori.jpg" alt="" width="494" height="772" loading="lazy">
-      </figure>
-
-      <figure class="mock dash shot">
-        <img src="assets/hero/analisis.jpg" alt="Halaman Analisis di dashboard Qola: total penyebutan, jangkauan, interaksi, estimasi PR value, sentimen sosial media dan berita, serta grafik performa penyebutan" width="1824" height="1698">
-      </figure>
-    </div>
+  <!-- Screenshots from the Qola dashboard (dev-dashboard-v2.qola.id, Jul–Sep 2026), header cropped out -->
+  <div class="hero-devices">
+    <figure class="laptop" tabindex="0">
+      <div class="laptop-lid">
+        <span class="laptop-cam" aria-hidden="true"></span>
+        <div class="laptop-screen">
+          <img src="assets/hero/analisis.jpg" alt="Halaman Analisis di dashboard Qola: total penyebutan, jangkauan, interaksi, estimasi PR value, sentimen sosial media dan berita, serta grafik performa penyebutan" width="1824" height="1698">
+        </div>
+      </div>
+      <div class="laptop-base" aria-hidden="true"><span class="laptop-notch"></span></div>
+    </figure>
+    <figure class="phone">
+      <div class="phone-screen">
+        <img src="assets/hero/kategori.jpg" alt="Grafik penyebutan berdasarkan kategori sumber di aplikasi Qola" width="494" height="772">
+      </div>
+    </figure>
   </div>
 </section>
 
 <!-- Clients -->
-<section class="light clients" id="klien" aria-labelledby="clients-title">
+<section class="clients" aria-labelledby="clients-title">
   <div class="wrap">
-    <h2 class="clients-title" id="clients-title">Dipercaya organisasi yang mengandalkan media intelligence</h2>
+    <h2 class="clients-title" id="clients-title">Dipercaya oleh</h2>
     <!-- Ganti teks wordmark dengan <img src="..." alt="Nama klien"> saat file logo tersedia. -->
-    <ul class="logo-strip reveal" aria-label="Klien">
-      <li class="client-logo">KOMINFO</li>
-      <li class="client-logo">PERTAMINA</li>
-      <li class="client-logo">PLN</li>
-      <li class="client-logo">UNILEVER</li>
-      <li class="client-logo">TELKOM</li>
-      <li class="client-logo">BRI</li>
-      <li class="client-logo">DISKOMINFO JABAR</li>
+    <ul class="logo-strip" aria-label="Klien">
+      <li>KOMINFO</li>
+      <li>PERTAMINA</li>
+      <li>PLN</li>
+      <li>UNILEVER</li>
+      <li>TELKOM</li>
+      <li>BRI</li>
+      <li>DISKOMINFO JABAR</li>
     </ul>
   </div>
 </section>
 
-<!-- Problem -->
-<section class="section dark" id="masalah" aria-labelledby="problem-title">
-  <div class="wrap">
-    <div class="section-head split">
-      <p class="eyebrow">Tantangan</p>
-      <h2 class="h2" id="problem-title">Apakah Anda tahu apa yang sedang dibicarakan tentang <span class="accent">brand Anda</span>?</h2>
-      <p class="lede">Bagi banyak tim komunikasi, jawabannya sering datang terlambat. Ini tantangan yang paling umum.</p>
-    </div>
-
-    <ol class="pains">
-      <li class="pain reveal">
-        <span class="pain-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="19" cy="18" r="2"/><circle cx="12" cy="12" r="2"/><path d="m6.5 7.5 4 3M17.5 7.5l-4 3M6.5 16.5l4-3M17.5 16.5l-4-3"/></svg></span>
-        <div><h3>Percakapan tersebar di banyak media</h3><p>Berita online, media sosial, dan kanal digital lain sulit dipantau dalam satu tempat.</p></div>
-        <span class="pain-n">01</span>
-      </li>
-      <li class="pain reveal">
-        <span class="pain-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9 2h6"/></svg></span>
-        <div><h3>Isu negatif diketahui terlambat</h3><p>Tim baru tahu setelah percakapan sudah berkembang luas.</p></div>
-        <span class="pain-n">02</span>
-      </li>
-      <li class="pain reveal">
-        <span class="pain-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V3h6v1M9 10h6M9 14h6M9 18h3"/></svg></span>
-        <div><h3>Monitoring masih manual</h3><p>Mengumpulkan, membaca, dan merekap mention menyita waktu tim.</p></div>
-        <span class="pain-n">03</span>
-      </li>
-      <li class="pain reveal">
-        <span class="pain-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-7 4 14 3-7h4"/></svg></span>
-        <div><h3>Perubahan sentimen sulit dilihat</h3><p>Pergeseran persepsi publik tidak terlihat dengan cepat.</p></div>
-        <span class="pain-n">04</span>
-      </li>
-      <li class="pain reveal">
-        <span class="pain-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"/></svg></span>
-        <div><h3>Data belum menjadi insight</h3><p>Data tersedia, tetapi sulit diterjemahkan menjadi langkah berikutnya.</p></div>
-        <span class="pain-n">05</span>
-      </li>
-      <li class="pain reveal">
-        <span class="pain-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg></span>
-        <div><h3>Pimpinan butuh informasi ringkas</h3><p>Management perlu gambaran singkat untuk mengambil keputusan.</p></div>
-        <span class="pain-n">06</span>
-      </li>
-    </ol>
-  </div>
-</section>
-
-<!-- Solution -->
-<section class="section light" id="insight" data-nav="insight" aria-labelledby="insight-title">
+<!-- Three tall cards, each with a real screen from the product -->
+<section class="section" id="insight" aria-labelledby="insight-title">
   <div class="wrap">
     <div class="section-head center">
-      <p class="eyebrow">Solusi</p>
-      <h2 class="h2" id="insight-title">One platform. <span class="accent">Complete media intelligence.</span></h2>
-      <p class="lede">Qola menyatukan monitoring, analisis sentimen, analisis sumber, tren percakapan, alert, dan reporting dalam satu platform. Data jadi lebih mudah dipahami dan dipakai untuk mengambil keputusan.</p>
+      <h2 class="h2" id="insight-title">Satu platform. Berbagai sumber percakapan.</h2>
+      <p class="lede">Berita online, media sosial, dan media daerah dipantau di satu tempat, lalu diolah jadi angka yang mudah dibaca.</p>
     </div>
 
-    <div class="platform reveal">
-      <div class="pf-col">
-        <p class="pf-label">Media &amp; percakapan</p>
-        <ul class="pf-list">
-          <li>Berita online</li>
-          <li>Media sosial</li>
-          <li>Media daerah</li>
-          <li>Forum &amp; blog</li>
-        </ul>
-      </div>
-      <span class="pf-arrow" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
-      <div class="pf-core dark">
-        <div class="orb" aria-hidden="true"></div>
-        <img src="logo_qola.png" alt="Qola" width="887" height="365">
-        <p>Satu platform media intelligence</p>
-        <ul class="pf-chips" aria-label="Proses di dalam Qola">
-          <li class="badge line">Monitoring</li>
-          <li class="badge line">Analisis sentimen</li>
-          <li class="badge line">Analisis sumber</li>
-          <li class="badge line">Tren percakapan</li>
-          <li class="badge line">Alert</li>
-          <li class="badge line">Reporting</li>
-        </ul>
-      </div>
-      <span class="pf-arrow" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
-      <div class="pf-col">
-        <p class="pf-label">Intelligence &amp; insight</p>
-        <ul class="pf-list out">
-          <li>Isu prioritas</li>
-          <li>Perubahan sentimen</li>
-          <li>Ringkasan untuk pimpinan</li>
-        </ul>
-      </div>
+    <div class="tiles">
+      <article class="tile tile-coral reveal">
+        <h3>Monitoring</h3>
+        <p>Pantau berita online, media sosial, dan media daerah dalam satu feed.</p>
+        <div class="tile-shot">
+          <img src="assets/hero/analisis.jpg" alt="Ringkasan total penyebutan, jangkauan, dan interaksi di Qola" width="1824" height="1698" loading="lazy">
+        </div>
+      </article>
+      <article class="tile tile-lilac reveal">
+        <h3>Sentimen</h3>
+        <p>Positif, negatif, dan netral untuk Bahasa Indonesia, slang, dan bahasa daerah.</p>
+        <div class="tile-shot">
+          <img src="assets/hero/sentimen.jpg" alt="Grafik performa sentimen harian di Qola" width="1008" height="742" loading="lazy">
+        </div>
+      </article>
+      <article class="tile tile-blue reveal">
+        <h3>Sumber</h3>
+        <p>Lihat kanal mana yang paling ramai membicarakan Anda.</p>
+        <figure class="phone phone-tile">
+          <div class="phone-screen">
+            <img src="assets/hero/kategori.jpg" alt="Penyebutan berdasarkan kategori sumber di Qola" width="494" height="772" loading="lazy">
+          </div>
+        </figure>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- Sources & coverage -->
-<section class="section light src-sec" id="sumber" data-nav="insight" aria-labelledby="sources-title">
-  <div class="wrap">
-    <div class="section-head center">
-      <p class="eyebrow">Sumber data &amp; cakupan</p>
-      <h2 class="h2" id="sources-title">Satu platform. Berbagai sumber <span class="accent">percakapan</span>.</h2>
-      <p class="lede">Berita online, media sosial, dan kanal digital lain dipantau dalam satu tempat, termasuk ratusan media daerah.</p>
-    </div>
+<!-- Wide feature cards -->
+<section class="section section-tight" aria-label="Fitur utama">
+  <div class="wrap wides">
 
-    <div class="srcmap">
-      <div class="srcmap-col reveal">
-        <p class="pf-label">Sumber data</p>
-        <ol class="src-list">
-          <li class="src">
-            <span class="source-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h6M7 12h10M7 16h10"/></svg>
-            </span>
-            <div><h3>Online News</h3><p>Pantau pemberitaan dari media nasional hingga media daerah.</p><div class="source-tags"><span class="badge line">Nasional</span><span class="badge line">Daerah</span></div></div>
-          </li>
-          <li class="src">
-            <span class="source-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 0 1-11.6 7.1L4 20l.9-4.4A8 8 0 1 1 20 12z"/><path d="M9 11h.01M12 11h.01M15 11h.01"/></svg>
-            </span>
-            <div><h3>Social Media</h3><p>Tangkap percakapan publik mengenai brand, instansi, dan isu.</p><div class="source-tags"><span class="badge line">X</span><span class="badge line">Instagram</span><span class="badge line">TikTok</span><span class="badge line">YouTube</span></div></div>
-          </li>
-          <li class="src">
-            <span class="source-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>
-            </span>
-            <div><h3>Web &amp; Digital Sources</h3><p>Temukan penyebaran narasi dari berbagai kanal digital.</p><div class="source-tags"><span class="badge line">Forum</span><span class="badge line">Blog</span></div></div>
-          </li>
-          <li class="src">
-            <span class="source-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 3 7.5l9 4.5 9-4.5z"/><path d="m3 12 9 4.5 9-4.5M3 16.5 12 21l9-4.5"/></svg>
-            </span>
-            <div><h3>Data Intelligence</h3><p>Satukan berbagai data menjadi insight yang lebih mudah dianalisis.</p><div class="source-tags"><span class="badge line">Dashboard</span><span class="badge line">API</span></div></div>
-          </li>
-        </ol>
+    <article class="wide wide-blue reveal">
+      <div class="wide-copy">
+        <h2 class="h2">Tahu lebih dulu, sebelum isu meluas.</h2>
+        <p>Qola mendeteksi lonjakan isu dan sentimen negatif, lalu mengirim alert lewat WhatsApp, email, atau webhook.</p>
+        <a class="text-link" href="produk/index.html#peringatan-dini">Tentang Peringatan Dini</a>
       </div>
-
-      <span class="pf-arrow srcmap-arrow" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
-
-      <div class="srcmap-col reveal">
-        <p class="pf-label">Cakupan</p>
-        <h3 class="cov-title">Dari Aceh sampai Papua, <span class="accent">termasuk media daerah</span>.</h3>
-        <p class="cov-lede">Isu sering muncul pertama kali di media lokal. Qola mengindeks ratusan media daerah yang tidak dijangkau tools global.</p>
-        <div class="facts">
-          <div class="fact"><b>580+</b><span>media lokal terindeks</span></div>
-          <div class="fact"><b>8</b><span>bahasa daerah: Sunda, Jawa, Bali, Minang, Batak, Bugis, Aceh, Madura</span></div>
-          <div class="fact"><b>38</b><span>provinsi, dengan rincian hingga kabupaten/kota</span></div>
+      <div class="wide-visual">
+        <div class="ui-card">
+          <p class="ui-label">Alur peringatan · simulasi</p>
+          <ol class="ui-steps">
+            <li><time>+0:00</time>Lonjakan terdeteksi: volume di X naik 420%</li>
+            <li><time>+0:02</time>Diklasifikasi sebagai krisis reputasi · pelayanan</li>
+            <li><time>+0:04</time>Alert WhatsApp terkirim ke 6 nomor humas dan pimpinan</li>
+            <li><time>+0:07</time>Brief PDF tersedia di dashboard</li>
+          </ol>
+        </div>
+        <div class="ui-bubble">
+          <b>Qola</b>
+          <p>Sentimen negatif naik untuk topik “layanan online”: 12,4 rb penyebutan dalam 3 jam. Brief sudah siap.</p>
         </div>
       </div>
-    </div>
+    </article>
+
+    <article class="wide wide-sand wide-flip reveal">
+      <div class="wide-copy">
+        <h2 class="h2">Dari Aceh sampai Papua, termasuk media daerah.</h2>
+        <p>Isu sering muncul pertama kali di media lokal. Qola mengindeks ratusan media daerah yang tidak dijangkau tools global.</p>
+        <a class="text-link" href="produk/index.html#monitoring-360">Tentang Monitoring 360°</a>
+      </div>
+      <div class="wide-visual">
+        <dl class="ui-facts">
+          <div><dt>Media lokal terindeks</dt><dd>580+</dd></div>
+          <div><dt>Provinsi, hingga kabupaten/kota</dt><dd>38</dd></div>
+          <div class="wide-span"><dt>Bahasa daerah</dt><dd>8</dd><p>Sunda, Jawa, Bali, Minang, Batak, Bugis, Aceh, Madura</p></div>
+        </dl>
+      </div>
+    </article>
+
+    <article class="wide wide-lilac reveal">
+      <div class="wide-copy">
+        <h2 class="h2">Ringkasan untuk pimpinan, siap dibaca.</h2>
+        <p>Hasil monitoring menjadi executive summary, brief respons, dan laporan PDF. Pimpinan tidak perlu membaca ribuan mention.</p>
+        <a class="text-link" href="produk/index.html#brief-laporan">Tentang Brief &amp; Laporan</a>
+      </div>
+      <div class="wide-visual">
+        <div class="ui-card ui-doc" aria-label="Contoh laporan eksekutif Qola">
+          <p class="ui-label">Laporan eksekutif · Mingguan · Contoh data</p>
+          <h3>Isu layanan online, 15–21 Sep 2026</h3>
+          <ul>
+            <li>Volume percakapan naik 4,1% dibanding minggu lalu.</li>
+            <li>Narasi dominan: antrean dan error layanan online.</li>
+            <li>Sentimen membaik setelah klarifikasi resmi hari Kamis.</li>
+          </ul>
+          <div class="ui-sent" aria-hidden="true"><span style="width:58%"></span><span style="width:27%"></span><span style="width:15%"></span></div>
+          <dl class="ui-sentleg">
+            <div><dt>Positif</dt><dd>58%</dd></div>
+            <div><dt>Netral</dt><dd>27%</dd></div>
+            <div><dt>Negatif</dt><dd>15%</dd></div>
+          </dl>
+        </div>
+      </div>
+    </article>
+
   </div>
 </section>
 
-<!-- Live today: dashboard preview filled by js/live.js.
+<!-- Live today (dark): dashboard preview filled by js/live.js.
      Set data-live-endpoint to a JSON URL to show real data (schema in js/live.js).
      Left empty, the panel shows labelled placeholders instead of numbers. -->
-<section class="section dark live-sec" id="hari-ini" data-nav="insight" data-live-endpoint="" data-live-interval="60" data-state="placeholder" aria-labelledby="live-title">
+<section class="section dark live-sec" id="hari-ini" data-live-endpoint="" data-live-interval="60" data-state="placeholder" aria-labelledby="live-title">
   <div class="wrap">
-    <div class="section-head split">
-      <p class="eyebrow">Hari ini di Qola</p>
-      <h2 class="h2" id="live-title">Apa yang sedang dibicarakan <span class="accent">hari ini</span>.</h2>
-      <p class="lede">Cuplikan langsung dari percakapan yang sedang dipantau Qola: volume, sentimen, isu teratas, dan lonjakan yang baru terjadi.</p>
+    <div class="section-head center">
+      <h2 class="h2" id="live-title"><span class="accent">Lihat langsung</span> apa yang dibicarakan hari ini.</h2>
+      <p class="lede">Volume, sentimen, isu teratas, dan lonjakan yang baru terjadi, dari percakapan yang sedang dipantau Qola.</p>
     </div>
 
     <div class="lv reveal">
@@ -295,9 +214,9 @@
           <span class="lv-label">Sentimen hari ini</span>
           <div class="lv-sent" aria-hidden="true"><span id="lv-pos-bar"></span><span id="lv-neu-bar"></span><span id="lv-neg-bar"></span></div>
           <dl class="lv-sentleg">
-            <div><i style="background:#68ef3f"></i><dt>Positif</dt><dd id="lv-pos">—</dd></div>
-            <div><i style="background:#b7bda5"></i><dt>Netral</dt><dd id="lv-neu">—</dd></div>
-            <div><i style="background:#7e8371"></i><dt>Negatif</dt><dd id="lv-neg">—</dd></div>
+            <div><i style="background:#31ce01"></i><dt>Positif</dt><dd id="lv-pos">—</dd></div>
+            <div><i style="background:#c5cad3"></i><dt>Netral</dt><dd id="lv-neu">—</dd></div>
+            <div><i style="background:#ffab94"></i><dt>Negatif</dt><dd id="lv-neg">—</dd></div>
           </dl>
         </div>
         <div class="lv-metric">
@@ -338,213 +257,178 @@
   </div>
 </section>
 
-<!-- How it works -->
-<section class="section dark" id="cara-kerja" data-nav="cara-kerja" aria-labelledby="flow-title">
-  <div class="wrap">
-    <div class="section-head center">
-      <p class="eyebrow">Cara kerja</p>
-      <h2 class="h2" id="flow-title">Dari percakapan publik ke <span class="accent">keputusan yang tepat</span>.</h2>
-      <p class="lede">Empat tahap sederhana yang dilalui data di dalam Qola, dari pertama kali ditemukan sampai siap dipakai untuk bertindak.</p>
-    </div>
-
-    <ol class="flow" aria-label="Alur kerja Qola">
-      <li class="flow-step reveal">
-        <span class="flow-node" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></span>
-        <div>
-          <span class="flow-n">01</span>
-          <h3>Monitor</h3>
-          <p>Temukan percakapan, pemberitaan, dan informasi yang relevan.</p>
+<!-- Use cases: list on the left, the matching screen on the right -->
+<section class="section" id="penggunaan" aria-labelledby="uc-title">
+  <div class="wrap more">
+    <div class="more-list">
+      <h2 class="h2" id="uc-title">Dan bukan cuma itu.</h2>
+      <p class="lede">Situasi yang sering dihadapi tim komunikasi, PR, marketing, hingga management.</p>
+      <div class="acc" data-acc>
+        <div class="acc-item open" data-screen="brand">
+          <button type="button" class="acc-btn" aria-expanded="true" aria-controls="acc-1" id="acc-b1">Brand Monitoring</button>
+          <div class="acc-panel" id="acc-1" role="region" aria-labelledby="acc-b1">
+            <p>Brand dibicarakan di portal berita, media sosial, dan forum setiap hari. Qola mengumpulkannya dalam satu feed.</p>
+            <a class="text-link" href="produk/index.html#monitoring-360">Monitoring 360°</a>
+          </div>
         </div>
-      </li>
-      <li class="flow-step reveal">
-        <span class="flow-node" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16M7 16v-5M12 16V6M17 16v-8"/></svg></span>
-        <div>
-          <span class="flow-n">02</span>
-          <h3>Analyze</h3>
-          <p>Analisis sentimen, sumber, volume percakapan, dan tren.</p>
+        <div class="acc-item" data-screen="krisis">
+          <button type="button" class="acc-btn" aria-expanded="false" aria-controls="acc-2" id="acc-b2">Crisis &amp; Issue Monitoring</button>
+          <div class="acc-panel" id="acc-2" role="region" aria-labelledby="acc-b2" hidden>
+            <p>Keluhan kecil bisa membesar dalam hitungan jam. Qola memberi tahu tim saat isu mulai naik.</p>
+            <a class="text-link" href="produk/index.html#peringatan-dini">Peringatan Dini</a>
+          </div>
         </div>
-      </li>
-      <li class="flow-step reveal">
-        <span class="flow-node" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.4 1 1.1 1 1.9V16h5v-.2c0-.8.4-1.5 1-1.9A6 6 0 0 0 12 3z"/></svg></span>
-        <div>
-          <span class="flow-n">03</span>
-          <h3>Understand</h3>
-          <p>Identifikasi isu, pola, perubahan persepsi, dan insight penting.</p>
+        <div class="acc-item" data-screen="kampanye">
+          <button type="button" class="acc-btn" aria-expanded="false" aria-controls="acc-3" id="acc-b3">Campaign Monitoring</button>
+          <div class="acc-panel" id="acc-3" role="region" aria-labelledby="acc-b3" hidden>
+            <p>Ukur apakah pesan campaign sampai dan bagaimana audiens menanggapinya.</p>
+            <a class="text-link" href="produk/index.html#analisis-sentimen">Analisis Sentimen</a>
+          </div>
         </div>
-      </li>
-      <li class="flow-step reveal">
-        <span class="flow-node" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg></span>
-        <div>
-          <span class="flow-n">04</span>
-          <h3>Act</h3>
-          <p>Gunakan insight untuk menentukan langkah dan mendukung pengambilan keputusan.</p>
+        <div class="acc-item" data-screen="kompetitor">
+          <button type="button" class="acc-btn" aria-expanded="false" aria-controls="acc-4" id="acc-b4">Competitor Intelligence</button>
+          <div class="acc-panel" id="acc-4" role="region" aria-labelledby="acc-b4" hidden>
+            <p>Bandingkan performa brand Anda dengan kompetitor, dari volume sampai kanal.</p>
+            <a class="text-link" href="produk/index.html#monitoring-360">Monitoring 360°</a>
+          </div>
         </div>
-      </li>
-    </ol>
-  </div>
-</section>
-
-<!-- Products: quick view only; full details on produk/index.html, one anchor per product -->
-<section class="section light" id="produk" data-nav="produk" aria-labelledby="product-title">
-  <div class="wrap">
-    <div class="section-head center">
-      <p class="eyebrow">Produk</p>
-      <h2 class="h2" id="product-title">Empat modul untuk <span class="accent">satu alur kerja</span>.</h2>
-      <p class="lede">Tiap modul bisa berdiri sendiri, dan paling kuat saat dipakai bersama.</p>
+        <div class="acc-item" data-screen="pr">
+          <button type="button" class="acc-btn" aria-expanded="false" aria-controls="acc-5" id="acc-b5">Public Relations Monitoring</button>
+          <div class="acc-panel" id="acc-5" role="region" aria-labelledby="acc-b5" hidden>
+            <p>Lihat media mana yang memuat rilis dan bagaimana isu terkait diberitakan, tanpa kliping manual.</p>
+            <a class="text-link" href="produk/index.html#monitoring-360">Monitoring 360°</a>
+          </div>
+        </div>
+        <div class="acc-item" data-screen="eksekutif">
+          <button type="button" class="acc-btn" aria-expanded="false" aria-controls="acc-6" id="acc-b6">Executive Reporting</button>
+          <div class="acc-panel" id="acc-6" role="region" aria-labelledby="acc-b6" hidden>
+            <p>Management mendapat gambaran singkat tanpa membaca data monitoring satu per satu.</p>
+            <a class="text-link" href="produk/index.html#brief-laporan">Brief &amp; Laporan</a>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="prods">
-      <article class="prod reveal">
-        <div class="source-top"><span class="source-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h6M7 12h10M7 16h10"/></svg></span><span class="feature-n">01</span></div>
-        <h3>Monitoring 360°</h3>
-        <p class="prod-desc">Pantau berita online, media sosial, dan media daerah dalam satu feed.</p>
-        <p class="prod-benefit"><span>Manfaat utama</span>Tidak ada pemberitaan penting yang terlewat.</p>
-        <a class="prod-link" href="produk/index.html#monitoring-360">Learn More <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5"/></svg></a>
-      </article>
-      <article class="prod reveal">
-        <div class="source-top"><span class="source-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 14.5c.9 1.2 2.1 1.8 3.5 1.8s2.6-.6 3.5-1.8M9 9.5h.01M15 9.5h.01"/></svg></span><span class="feature-n">02</span></div>
-        <h3>Analisis Sentimen</h3>
-        <p class="prod-desc">Klasifikasi sentimen positif, negatif, dan netral untuk Bahasa Indonesia, slang, dan bahasa daerah.</p>
-        <p class="prod-benefit"><span>Manfaat utama</span>Pahami persepsi publik, bukan sekadar volume.</p>
-        <a class="prod-link" href="produk/index.html#analisis-sentimen">Learn More <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5"/></svg></a>
-      </article>
-      <article class="prod reveal">
-        <div class="source-top"><span class="source-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15z"/><path d="M10 21h4"/></svg></span><span class="feature-n">03</span></div>
-        <h3>Peringatan Dini</h3>
-        <p class="prod-desc">Deteksi lonjakan isu dan sentimen negatif, lalu kirim alert lewat WhatsApp, email, atau webhook.</p>
-        <p class="prod-benefit"><span>Manfaat utama</span>Tim merespons isu sebelum meluas.</p>
-        <a class="prod-link" href="produk/index.html#peringatan-dini">Learn More <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5"/></svg></a>
-      </article>
-      <article class="prod reveal">
-        <div class="source-top"><span class="source-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M9 17v-3M12 17v-5M15 17v-2"/></svg></span><span class="feature-n">04</span></div>
-        <h3>Brief &amp; Laporan</h3>
-        <p class="prod-desc">Ubah hasil monitoring menjadi executive summary, brief respons, dan laporan PDF.</p>
-        <p class="prod-benefit"><span>Manfaat utama</span>Pimpinan dapat gambaran ringkas tanpa membaca ribuan mention.</p>
-        <a class="prod-link" href="produk/index.html#brief-laporan">Learn More <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5"/></svg></a>
-      </article>
-    </div>
-  </div>
-</section>
+    <!-- One laptop, one screen per use case. Contoh tampilan: angka dan teks di layar ini ilustrasi, bukan data klien. -->
+    <figure class="laptop uc-device" aria-hidden="true">
+      <div class="laptop-lid">
+        <span class="laptop-cam"></span>
+        <div class="laptop-screen" id="uc-screens">
 
-<!-- Use cases -->
-<section class="section dark uc-sec" id="penggunaan" data-nav="produk" aria-labelledby="uc-title">
-  <div class="wrap usecases">
-    <div class="uc-head">
-      <p class="eyebrow">Use cases</p>
-      <h2 class="h2" id="uc-title">Situasi nyata saat tim Anda <span class="accent">membutuhkan Qola</span>.</h2>
-      <p class="lede">Enam kondisi yang sering dihadapi tim komunikasi, PR, marketing, hingga management, dan produk Qola yang membantu di setiap kondisi.</p>
-    </div>
+          <div class="scr on" data-screen="brand">
+            <div class="scr-side"><b></b><i class="on"></i><i></i><i></i><i></i><i></i></div>
+            <div class="scr-bar"><b>Feed Penyebutan</b><span>24–30 Sep 2026</span></div>
+            <div class="scr-body">
+              <div class="scr-kpis">
+                <div class="scr-card"><small>Penyebutan</small><b>60.5K</b></div>
+                <div class="scr-card"><small>Jangkauan</small><b>566.2M</b></div>
+                <div class="scr-card"><small>Interaksi</small><b>5M</b></div>
+              </div>
+              <ul class="scr-card scr-feed">
+                <li><span class="scr-av" style="--c: var(--color-metric-blue)"></span><div><small>Berita online · 12 menit lalu</small><p>Layanan pelanggan Brand Anda dinilai makin cepat merespons keluhan.</p></div><span class="chip pos">Positif</span></li>
+                <li><span class="scr-av" style="--c: var(--color-charcoal)"></span><div><small>X / Twitter · 25 menit lalu</small><p>Ada yang tahu promo terbaru Brand Anda berlaku sampai kapan?</p></div><span class="chip neu">Netral</span></li>
+                <li><span class="scr-av" style="--c: var(--color-coral-signal)"></span><div><small>Instagram · 41 menit lalu</small><p>Pesanan telat dua hari dan belum ada kabar dari CS.</p></div><span class="chip neg">Negatif</span></li>
+                <li><span class="scr-av" style="--c: var(--color-sleep-lilac)"></span><div><small>Media daerah · 1 jam lalu</small><p>Brand Anda buka gerai baru dan serap 120 tenaga kerja lokal.</p></div><span class="chip pos">Positif</span></li>
+                <li><span class="scr-av" style="--c: var(--color-recovery-green)"></span><div><small>TikTok · 2 jam lalu</small><p>Review jujur produk baru Brand Anda setelah dipakai sebulan.</p></div><span class="chip neu">Netral</span></li>
+              </ul>
+            </div>
+          </div>
 
-    <div class="uc-list">
-      <ol>
-        <li class="uc reveal">
-          <span class="uc-dot" aria-hidden="true"></span>
-          <span class="uc-n">01</span>
-          <div>
-            <h3>Brand Monitoring</h3>
-            <p>Brand dibicarakan di portal berita, media sosial, dan forum setiap hari. Tim sulit mengikuti semuanya secara manual.</p>
-            <a class="uc-link" href="produk/index.html#monitoring-360">Monitoring 360° <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5"/></svg></a>
+          <div class="scr" data-screen="krisis">
+            <div class="scr-side"><b></b><i></i><i class="on"></i><i></i><i></i><i></i></div>
+            <div class="scr-bar"><b>Peringatan Dini</b><span>Hari ini, 09.14</span></div>
+            <div class="scr-body">
+              <div class="scr-card scr-alert">
+                <span class="chip neg">Risiko tinggi</span>
+                <b>Isu “pengiriman lambat” naik 340% dalam 2 jam</b>
+                <small>1.248 penyebutan · 72% negatif</small>
+              </div>
+              <div class="scr-card">
+                <small>Volume penyebutan per jam</small>
+                <svg class="scr-spike" viewBox="0 0 240 80" preserveAspectRatio="none">
+                  <path d="M0 70 L20 68 L40 69 L60 66 L80 67 L100 64 L120 62 L140 60 L160 52 L180 36 L200 18 L220 8 L240 4 L240 80 L0 80 Z" fill="rgba(255, 171, 148, 0.25)"/>
+                  <path d="M0 70 L20 68 L40 69 L60 66 L80 67 L100 64 L120 62 L140 60 L160 52 L180 36 L200 18 L220 8 L240 4" fill="none" stroke="#e5484d" stroke-width="2" vector-effect="non-scaling-stroke"/>
+                  <path d="M0 44 H240" stroke="#c5cad3" stroke-width="1" stroke-dasharray="4 4" vector-effect="non-scaling-stroke"/>
+                </svg>
+              </div>
+              <div class="scr-pair">
+                <div class="scr-card"><small>Alert WhatsApp</small><b>Terkirim ke 12 orang</b></div>
+                <div class="scr-card"><small>Sumber utama</small><b>X / Twitter · 68%</b></div>
+              </div>
+            </div>
           </div>
-        </li>
-        <li class="uc reveal">
-          <span class="uc-dot" aria-hidden="true"></span>
-          <span class="uc-n">02</span>
-          <div>
-            <h3>Crisis &amp; Issue Monitoring</h3>
-            <p>Keluhan kecil bisa membesar dalam hitungan jam. Saat tim menyadarinya, isu sering sudah diberitakan.</p>
-            <a class="uc-link" href="produk/index.html#peringatan-dini">Peringatan Dini <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5"/></svg></a>
-          </div>
-        </li>
-        <li class="uc reveal">
-          <span class="uc-dot" aria-hidden="true"></span>
-          <span class="uc-n">03</span>
-          <div>
-            <h3>Campaign Monitoring</h3>
-            <p>Campaign sudah diluncurkan, tetapi sulit mengukur apakah pesannya sampai dan bagaimana audiens menanggapinya.</p>
-            <a class="uc-link" href="produk/index.html#analisis-sentimen">Analisis Sentimen <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5"/></svg></a>
-          </div>
-        </li>
-        <li class="uc reveal">
-          <span class="uc-dot" aria-hidden="true"></span>
-          <span class="uc-n">04</span>
-          <div>
-            <h3>Competitor Intelligence</h3>
-            <p>Tim tahu performa brand sendiri, tetapi tidak punya pembanding yang jelas terhadap kompetitor.</p>
-            <a class="uc-link" href="produk/index.html#monitoring-360">Monitoring 360° <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5"/></svg></a>
-          </div>
-        </li>
-        <li class="uc reveal">
-          <span class="uc-dot" aria-hidden="true"></span>
-          <span class="uc-n">05</span>
-          <div>
-            <h3>Public Relations Monitoring</h3>
-            <p>Tim PR perlu tahu media mana yang memuat rilis dan bagaimana isu terkait diberitakan, tanpa kliping manual.</p>
-            <a class="uc-link" href="produk/index.html#monitoring-360">Monitoring 360° <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5"/></svg></a>
-          </div>
-        </li>
-        <li class="uc reveal">
-          <span class="uc-dot" aria-hidden="true"></span>
-          <span class="uc-n">06</span>
-          <div>
-            <h3>Executive Reporting</h3>
-            <p>Management butuh gambaran singkat, tetapi data monitoring terlalu banyak untuk dibaca satu per satu.</p>
-            <a class="uc-link" href="produk/index.html#brief-laporan">Brief &amp; Laporan <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5"/></svg></a>
-          </div>
-        </li>
-      </ol>
-    </div>
-  </div>
-</section>
 
-<!-- Features -->
-<section class="section light" id="fitur" data-nav="fitur">
-  <div class="wrap">
-    <div class="section-head center">
-      <p class="eyebrow">Kenapa Qola</p>
-      <h2 class="h2">Lebih sedikit kerja manual, <span class="accent">lebih cepat memahami situasi</span>.</h2>
-      <p class="lede">Enam alasan tim memakai Qola untuk memantau, memahami, dan merespons percakapan publik.</p>
-    </div>
+          <div class="scr" data-screen="kampanye">
+            <div class="scr-side"><b></b><i></i><i></i><i class="on"></i><i></i><i></i></div>
+            <div class="scr-bar"><b>Analisis Kampanye</b><span>1 Jul – 30 Sep 2026</span></div>
+            <div class="scr-body scr-split">
+              <div class="scr-card scr-shot"><img src="assets/hero/sentimen.jpg" alt="" width="1008" height="742" loading="lazy"></div>
+              <div class="scr-stack">
+                <div class="scr-card"><small>Sentimen positif</small><b>64%</b></div>
+                <div class="scr-card"><small>Pesan kunci muncul</small><b>7 dari 10</b></div>
+                <div class="scr-card"><small>Hashtag kampanye</small><b>12.4K</b></div>
+              </div>
+            </div>
+          </div>
 
-    <ul class="why-list">
-      <li class="why reveal">
-        <div class="why-top"><span class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></span><span class="feature-n">01</span></div>
-        <h3>Real-Time Monitoring</h3>
-        <p>Pantau perkembangan percakapan dan pemberitaan secara berkelanjutan, sehingga tim tidak tertinggal saat situasi berubah.</p>
-      </li>
-      <li class="why reveal">
-        <div class="why-top"><span class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 3 7.5l9 4.5 9-4.5z"/><path d="m3 12 9 4.5 9-4.5M3 16.5 12 21l9-4.5"/></svg></span><span class="feature-n">02</span></div>
-        <h3>Integrated Intelligence</h3>
-        <p>Satukan data dari berita online, media sosial, dan sumber digital lain dalam satu platform, tanpa berpindah antar-tools.</p>
-      </li>
-      <li class="why reveal">
-        <div class="why-top"><span class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></span><span class="feature-n">03</span></div>
-        <h3>Actionable Insights</h3>
-        <p>Ubah data menjadi insight yang lebih mudah digunakan untuk menentukan tindakan berikutnya.</p>
-      </li>
-      <li class="why reveal">
-        <div class="why-top"><span class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 0 1-14.3 4.9M4 12a8 8 0 0 1 14.3-4.9"/><path d="M18.5 3v4h-4M5.5 21v-4h4"/></svg></span><span class="feature-n">04</span></div>
-        <h3>Automated Monitoring</h3>
-        <p>Kurangi proses monitoring manual, sehingga tim punya lebih banyak waktu untuk menganalisis dan merespons.</p>
-      </li>
-      <li class="why reveal">
-        <div class="why-top"><span class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></svg></span><span class="feature-n">05</span></div>
-        <h3>Custom Sentiment Alerts</h3>
-        <p>Atur sendiri threshold sentimen negatif untuk menentukan kapan sistem mengirim notifikasi ke tim.</p>
-      </li>
-      <li class="why reveal">
-        <div class="why-top"><span class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg></span><span class="feature-n">06</span></div>
-        <h3>Executive Summary</h3>
-        <p>Dapatkan ringkasan informasi penting agar stakeholder dapat memahami kondisi dengan lebih cepat.</p>
-      </li>
-    </ul>
+          <div class="scr" data-screen="kompetitor">
+            <div class="scr-side"><b></b><i></i><i></i><i class="on"></i><i></i><i></i></div>
+            <div class="scr-bar"><b>Perbandingan Kompetitor</b><span>30 hari terakhir</span></div>
+            <div class="scr-body scr-split">
+              <div class="scr-card">
+                <small>Share of voice</small>
+                <ul class="scr-sov">
+                  <li class="own"><span>Brand Anda</span><span class="track"><span style="--w: 38%"></span></span><b>38%</b></li>
+                  <li><span>Kompetitor A</span><span class="track"><span style="--w: 27%"></span></span><b>27%</b></li>
+                  <li><span>Kompetitor B</span><span class="track"><span style="--w: 21%"></span></span><b>21%</b></li>
+                  <li><span>Kompetitor C</span><span class="track"><span style="--w: 14%"></span></span><b>14%</b></li>
+                </ul>
+                <small class="scr-note">Sentimen positif: Anda 64% · A 51% · B 47% · C 42%</small>
+              </div>
+              <div class="scr-card scr-shot scr-tall"><img src="assets/hero/kategori.jpg" alt="" width="494" height="772" loading="lazy"></div>
+            </div>
+          </div>
+
+          <div class="scr" data-screen="pr">
+            <div class="scr-side"><b></b><i></i><i></i><i></i><i class="on"></i><i></i></div>
+            <div class="scr-bar"><b>Liputan Rilis</b><span>Rilis 26 Sep 2026</span></div>
+            <div class="scr-body">
+              <div class="scr-kpis">
+                <div class="scr-card"><small>Media memuat</small><b>48</b></div>
+                <div class="scr-card"><small>Provinsi</small><b>21</b></div>
+                <div class="scr-card"><small>Est. PR value</small><b>Rp 2.3B</b></div>
+              </div>
+              <ul class="scr-card scr-feed scr-cov">
+                <li><small>Media nasional</small><p>Program beasiswa 2026 dibuka untuk 5.000 pelajar</p><span class="chip pos">Positif</span></li>
+                <li><small>Media daerah · Jabar</small><p>Pendaftaran beasiswa kini bisa lewat kantor kecamatan</p><span class="chip pos">Positif</span></li>
+                <li><small>Majalah bisnis</small><p>Seberapa besar dampak beasiswa korporasi bagi daerah?</p><span class="chip neu">Netral</span></li>
+                <li><small>Media daerah · Sumut</small><p>Kuota beasiswa wilayah barat dinilai masih kecil</p><span class="chip neg">Negatif</span></li>
+                <li><small>Portal berita · Bali</small><p>Penerima beasiswa tahun lalu kini magang di luar negeri</p><span class="chip pos">Positif</span></li>
+                <li><small>Media daerah · Sulsel</small><p>Sosialisasi beasiswa digelar di 12 sekolah Makassar</p><span class="chip neu">Netral</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="scr" data-screen="eksekutif">
+            <div class="scr-side"><b></b><i></i><i></i><i></i><i></i><i class="on"></i></div>
+            <div class="scr-bar"><b>Laporan Eksekutif</b><span>Minggu ke-39</span></div>
+            <div class="scr-body">
+              <div class="scr-card scr-shot"><img src="assets/hero/analisis.jpg" alt="" width="1824" height="1698" loading="lazy"></div>
+              <p class="scr-toast">Brief PDF terkirim ke 5 pimpinan</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="laptop-base"><span class="laptop-notch"></span></div>
+    </figure>
   </div>
 </section>
 
 <!-- Compare -->
-<section class="section dark" id="banding" data-nav="fitur">
+<section class="section" id="banding" aria-labelledby="compare-title">
   <div class="wrap">
     <div class="section-head center">
-      <p class="eyebrow">Perbandingan</p>
-      <h2 class="h2">Dirancang untuk instansi Indonesia, <span class="accent">bukan diterjemahkan</span> untuknya.</h2>
+      <h2 class="h2" id="compare-title">Dirancang untuk instansi Indonesia, bukan diterjemahkan untuknya.</h2>
     </div>
     <div class="table-wrap reveal">
       <table>
@@ -566,37 +450,11 @@
   </div>
 </section>
 
-<!-- Proof -->
-<section class="section light" id="bukti" data-nav="fitur">
-  <div class="wrap">
-    <div class="section-head center">
-      <h2 class="h2">Janji yang bisa <span class="accent">diukur</span>.</h2>
-      <p class="lede">Angka yang kami ukur sendiri, dan komitmen yang kami tulis di kontrak.</p>
-    </div>
-    <div class="metrics">
-      <div class="metric reveal"><b class="display">97,3<small>%</small></b><span>Akurasi klasifikasi sentimen</span><p>Diuji terhadap 12.000 data berlabel manual.</p></div>
-      <div class="metric reveal"><b class="display">7<small>menit</small></b><span>Median waktu deteksi ke alert</span><p>Target SLA kami 15 menit.</p></div>
-      <div class="metric reveal"><b class="display">99,5<small>%</small></b><span>Uptime dalam SLA</span><p>Tertuang di MSA, termasuk respons support &lt;2 jam.</p></div>
-    </div>
-
-    <figure class="testimonial reveal">
-      <p class="eyebrow">Diskominfo provinsi · sejak 2024</p>
-      <div>
-        <blockquote>
-          <p>Dulu kami tahu isu dari grup WhatsApp staf pagi hari. Sekarang brief sudah masuk saat isu masih 500 penyebutan, bukan 50.000. Itu bedanya tim yang <em>merespons</em> dan tim yang bereaksi.</p>
-        </blockquote>
-        <figcaption>Kepala Bidang Diseminasi Informasi<span>Dinas Komunikasi dan Informatika Provinsi</span></figcaption>
-      </div>
-    </figure>
-  </div>
-</section>
-
 <!-- Pricing -->
-<section class="section light" id="harga" data-nav="harga">
+<section class="section" id="harga" data-nav="harga" aria-labelledby="price-title">
   <div class="wrap">
     <div class="section-head center">
-      <p class="eyebrow">Harga</p>
-      <h2 class="h2">Paket berlangganan untuk setiap skala tim humas</h2>
+      <h2 class="h2" id="price-title">Paket untuk setiap skala tim humas.</h2>
       <p class="lede">Harga dalam Rupiah dan bisa diadakan lewat e-Katalog. Semua paket termasuk uji coba 7 hari tanpa kartu kredit.</p>
       <div class="billing" role="group" aria-label="Periode tagihan">
         <button type="button" aria-pressed="true" data-cycle="month">Bulanan</button>
@@ -644,7 +502,7 @@
         <p class="plan-for">Untuk tim humas yang butuh respons krisis cepat.</p>
         <div class="price"><b data-month="Rp 18 jt" data-year="Rp 15 jt">Rp 18 jt</b><span>/ bulan</span></div>
         <p class="price-note" data-month="Ditagih bulanan" data-year="Ditagih Rp 180 jt per tahun">Ditagih bulanan</p>
-        <a href="#mulai" class="btn btn-sprout btn-block">Coba gratis 7 hari</a>
+        <a href="#mulai" class="btn btn-dark btn-block">Coba gratis 7 hari</a>
         <ul>
           <li class="head">Semua di Basic, plus:</li>
           <li>25 pengguna</li>
@@ -679,12 +537,11 @@
 </section>
 
 <!-- FAQ -->
-<section class="section dark" id="faq" data-nav="faq">
+<section class="section" id="faq" aria-labelledby="faq-title">
   <div class="wrap faq">
-    <div>
-      <p class="eyebrow">FAQ</p>
-      <h2 class="h2">Untuk tim pengadaan, hukum, dan TI.</h2>
-      <p class="lede">Pertanyaan lain? Tulis ke <a href="mailto:info@qola.id">info@qola.id</a>.</p>
+    <div class="section-head center">
+      <h2 class="h2" id="faq-title">Pertanyaan yang sering diajukan.</h2>
+      <p class="lede">Untuk tim pengadaan, hukum, dan TI. Pertanyaan lain? Tulis ke <a href="mailto:info@qola.id">info@qola.id</a>.</p>
     </div>
     <div class="qa-list">
       <details class="qa" open><summary>Apakah Qola bisa diadakan lewat e-Katalog?</summary><p>Bisa. Qola terdaftar di e-Katalog Sektoral Kominfo dan dapat diadakan lewat penunjukan langsung maupun tender terbatas. Tim kami membantu menyiapkan KAK dan RAB.</p></details>
@@ -698,18 +555,14 @@
 </section>
 
 <!-- Latest news: 4 newest articles from data/news.js, rendered by js/news.js -->
-<section class="section light" id="berita" aria-labelledby="news-title">
+<section class="section" id="berita" aria-labelledby="news-title">
   <div class="wrap">
     <div class="news-head">
       <div>
-        <p class="eyebrow">Berita &amp; insight</p>
-        <h2 class="h2" id="news-title">Kabar terbaru seputar <span class="accent">media intelligence</span>.</h2>
+        <h2 class="h2" id="news-title">Berita &amp; insight.</h2>
         <p class="lede">Tren media, isu yang sedang dipantau, dan kabar terbaru dari Qola.</p>
       </div>
-      <a href="berita/index.html" class="btn btn-outline">
-        View All News
-        <svg viewBox="0 0 12 12" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5"/></svg>
-      </a>
+      <a href="berita/index.html" class="btn btn-light">Lihat semua berita</a>
     </div>
     <div class="news-grid" data-news data-news-limit="4" data-news-base=""></div>
     <p class="news-note" data-news-note>Placeholder: belum ada artikel. Tambahkan artikel di <code>data/news.js</code>, dan empat artikel terbaru akan tampil di sini.</p>
@@ -717,30 +570,31 @@
 </section>
 
 <!-- CTA -->
-<section class="section dark cta" id="mulai">
-  <div class="orb orb-a" aria-hidden="true"></div>
-  <div class="orb orb-b" aria-hidden="true"></div>
+<section class="section cta" id="mulai" aria-labelledby="cta-title">
   <div class="wrap cta-inner">
-    <h2 class="display">Ubah percakapan media menjadi insight untuk <span class="accent">keputusan yang lebih baik</span>.</h2>
-    <p class="lede">Pantau apa yang sedang dibicarakan, pahami perubahan sentimen dan isu yang berkembang, lalu gunakan insight dari QOLA untuk mendukung pengambilan keputusan.</p>
-    <div class="cta-actions">
-      <a href="mailto:info@qola.id?subject=Request%20demo%20Qola" class="btn btn-sprout">Request Demo</a>
-      <a href="#insight" class="btn btn-ghost">
-        Explore QOLA
-        <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5"/></svg>
-      </a>
-    </div>
+    <h2 class="display" id="cta-title">Siap ketika Anda siap.</h2>
+    <p class="lede">Pantau apa yang sedang dibicarakan, pahami perubahan sentimen dan isu yang berkembang, lalu gunakan insight dari Qola untuk mengambil keputusan.</p>
+    <a href="mailto:info@qola.id?subject=Request%20demo%20Qola" class="btn btn-dark">Request Demo</a>
+  </div>
+  <div class="cta-devices" aria-hidden="true">
+    <figure class="laptop">
+      <div class="laptop-lid">
+        <span class="laptop-cam"></span>
+        <div class="laptop-screen"><img src="assets/hero/sentimen.jpg" alt="" width="1008" height="742" loading="lazy"></div>
+      </div>
+      <div class="laptop-base"><span class="laptop-notch"></span></div>
+    </figure>
   </div>
 </section>
 
 </main>
 
-<footer class="footer dark">
+<footer class="footer">
   <div class="wrap">
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="#top" class="logo"><img src="logo_qola.png" alt="Qola Media Intelligence" width="887" height="365"></a>
-        <p>Media intelligence oleh PT Abhipraya. Dibangun di Jakarta, untuk Indonesia.</p>
+        <p>© 2026 PT Abhipraya</p>
       </div>
       <div>
         <h4>Produk</h4>
@@ -755,49 +609,13 @@
         <ul><li><a href="#">Kebijakan privasi</a></li><li><a href="#">Kepatuhan UU PDP</a></li><li><a href="#">Template MSA</a></li><li><a href="#">e-Katalog LKPP</a></li></ul>
       </div>
     </div>
-    <div class="footer-bottom">
-      <span>© 2026 PT Abhipraya</span>
-      <span>Semua data tersimpan di server Indonesia</span>
-    </div>
+    <p class="footer-bottom">Semua data tersimpan di server Indonesia</p>
   </div>
 </footer>
 
 <script>
 (function () {
-  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var fmt = function (n, d) {
-    return n.toLocaleString('id-ID', { minimumFractionDigits: d || 0, maximumFractionDigits: d || 0 });
-  };
-  var el = function (id) { return document.getElementById(id); };
-  /* Nav, dropdown, and reveal on scroll live in js/site.js */
-
-  /* Email capture */
-  document.querySelectorAll('[data-capture]').forEach(function (form) {
-    var input = form.querySelector('input');
-    var note = form.nextElementSibling;
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var v = input.value.trim();
-      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)) {
-        note.className = 'capture-note';
-        note.textContent = 'Masukkan alamat email yang valid.';
-        input.focus();
-        return;
-      }
-      note.className = 'capture-note ok';
-      note.textContent = 'Terima kasih. Tim kami akan menghubungi ' + v + ' dalam 1 hari kerja.';
-      input.value = '';
-    });
-  });
-
-  /* Source counter */
-  var srcEl = el('src-count');
-  var src = 2847;
-  if (srcEl && !reduced) setInterval(function () {
-    if (document.hidden) return;
-    src += 1 + Math.floor(Math.random() * 2);
-    srcEl.textContent = fmt(src);
-  }, 4000);
+  /* Nav, reveal on scroll, and mobile menu live in js/site.js */
 
   /* Pricing: billing cycle */
   var cycleBtns = document.querySelectorAll('.billing button');
@@ -815,6 +633,33 @@
   qas.forEach(function (d) {
     d.addEventListener('toggle', function () {
       if (d.open) qas.forEach(function (o) { if (o !== d) o.open = false; });
+    });
+  });
+
+  /* Use cases: one item open, the laptop on the right shows its screen */
+  var acc = document.querySelector('[data-acc]');
+  var items = acc.querySelectorAll('.acc-item');
+  var screens = document.querySelectorAll('#uc-screens .scr');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+  function fade() {
+    acc.classList.toggle('fade-top', acc.scrollTop > 2);
+    acc.classList.toggle('fade-bottom', acc.scrollTop + acc.clientHeight < acc.scrollHeight - 2);
+  }
+  acc.addEventListener('scroll', fade, { passive: true });
+  window.addEventListener('resize', fade);
+  fade();
+  items.forEach(function (item) {
+    item.querySelector('.acc-btn').addEventListener('click', function () {
+      items.forEach(function (o) {
+        var on = o === item;
+        o.classList.toggle('open', on);
+        o.querySelector('.acc-btn').setAttribute('aria-expanded', on);
+        o.querySelector('.acc-panel').hidden = !on;
+      });
+      screens.forEach(function (s) { s.classList.toggle('on', s.dataset.screen === item.dataset.screen); });
+      /* Bring the opened item to the middle of the list (no-op when the list fits) */
+      acc.scrollTo({ top: item.offsetTop - (acc.clientHeight - item.offsetHeight) / 2, behavior: reduce.matches ? 'auto' : 'smooth' });
+      fade();
     });
   });
 })();
