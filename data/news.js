@@ -8,7 +8,9 @@
      date      publish date, "YYYY-MM-DD"
      excerpt   short description, 1–2 sentences
      image     thumbnail path from the site root, e.g. "assets/news/tren-media-q3-2026.jpg" (optional)
-     url       where "Read More" goes: a path from the site root or a full https:// URL
+     url       where the card links to: a path from the site root or a full https:// URL
+     readTime  minutes to read, e.g. 4 (optional, shown as "4 menit baca")
+     popular   true on the one article to highlight on the landing page (optional; else the newest)
 
    While this list is empty, both pages show labelled placeholder cards instead of articles. */
 window.QOLA_NEWS = [];

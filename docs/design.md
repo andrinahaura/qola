@@ -15,9 +15,9 @@ Bevel frames health data as a sunlit consumer device experience: a white editori
 | Charcoal | `#1f2025` | `--color-charcoal` | Filled download controls, dark surface blocks, logos, and monochrome iconography |
 | Ink | `#222326` | `--color-ink` | Display headings, section headings, feature titles, and primary text |
 | Cloud Card | `#ebf0f8` | `--color-cloud-card` | Feature-card surfaces, light icon fills, and text inside Charcoal download controls |
-| Body Gray | `#747679` | `--color-body-gray` | Body copy, muted navigation links, helper text, and secondary labels |
+| Body Gray #747679` | `--color-body-gray` | Body copy, muted navigation links, helper text, and secondary labels |
 | Signal Gold | `#ffca00` | `--color-signal-gold` | Rating stars and small positive health-data indicators |
-| Coral Signal | `#ffab94` | `--color-coral-signal` | Warm metric accents and lower-edge washes in feature visualizations |
+| Coral Signal | `#ffab94` | `--color-coral-signal` | Warm metric accents and lower-edge washes in feature visualizations | 
 | Recovery Green | `#31ce01` | `--color-recovery-green` | Recovery rings and green-tinted metric visualizations |
 | Metric Blue | `#415eee` | `--color-metric-blue` | Circular metric indicators and blue gradient treatments in product visuals |
 | Sleep Lilac | `#b9a6ff` | `--color-sleep-lilac` | Sleep-oriented metric rings and soft violet visual accents |

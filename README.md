@@ -4,19 +4,28 @@ Marketing website for **Qola**, a media intelligence platform built for Indonesi
 
 ## Repository Contents
 
-| File | Description |
-|------|-------------|
-| `Qola.html` | Main landing page (Bahasa Indonesia), laid out after the Bevel reference in `design.md`: sky hero with laptop and phone mockups, product cards, feature cards, the live panel, use cases, pricing, FAQ, and news. Links to each product open the product page at that product. |
-| `produk/index.html` | Product page with the full content of all four products. Each product has an anchor (`#monitoring-360`, `#analisis-sentimen`, `#peringatan-dini`, `#brief-laporan`) that the sticky anchor bar and the landing page link to. |
-| `css/qola.css` | Shared stylesheet for the landing page and product pages. |
-| `js/site.js` | Shared script: floating nav, mobile menu, optional Produk dropdown, scroll spy, reveal on scroll. |
-| `berita/index.html` | News page listing every article, with a category filter. The landing page's "View All News" button links here. |
-| `data/news.js` | Article list for the news section and news page. Field descriptions are at the top of the file. |
-| `js/news.js` | Renders articles from `data/news.js`. Shows labelled placeholders while the list is empty. |
-| `js/live.js` | Fills the "Hari ini di Qola" live panel on the landing page from a JSON endpoint. The expected JSON schema is documented at the top of the file. |
-| `Qola Standalone (1).html` | Bundled standalone build of an earlier landing page version, with all assets inlined. |
-| `design.md` | Design style reference: color tokens, typography, and component guidelines. |
-| `logo_qola.png` | Qola logo used by the landing page. |
+```
+index.html                 Landing page (Bahasa Indonesia)
+produk/index.html          Product page: four products as stacked sticky cards
+berita/index.html          News page with a category filter
+css/qola.css               Shared stylesheet for every page
+js/
+  site.js                  Nav, Produk dropdown, mobile menu, scroll spy, reveal on scroll
+  animations.js            Motion (motion.dev) animations: reveals, chat bubbles, FAQ, product-card stack
+  hero.js                  Landing hero: dashboard cards assemble on scroll
+  live.js                  "Hari ini di Qola" live panel, filled from a JSON endpoint (schema at the top)
+  news.js                  Renders articles from data/news.js
+  produk.js                Interactive dashboard demos inside the product cards
+data/news.js               Article list (field descriptions at the top of the file)
+assets/
+  brand/logo-qola.png      Qola logo
+  img/og-qola.jpg          Social share image
+  img/hero/                Screenshots used on the landing page
+  img/dashboard/           Dashboard pieces (KPI cards, chart) used in the hero and the CTA collage
+docs/design.md             Design reference: colour tokens, typography, components
+```
+
+All dashboard content shown on the site is example data, never client data.
 
 ## Getting Started
 
@@ -29,7 +38,7 @@ No build step or dependencies are required.
    cd qola
    ```
 
-2. Open `Qola.html` in a web browser.
+2. Open `index.html` in a web browser.
 
 To serve the page locally over HTTP instead:
 
@@ -37,13 +46,13 @@ To serve the page locally over HTTP instead:
 python3 -m http.server 8000
 ```
 
-Then open <http://localhost:8000/Qola.html>.
+Then open <http://localhost:8000/index.html>.
 
 ## Notes
 
-- `Qola.html` loads the Inter font from Google Fonts, so an internet connection is needed for correct typography.
-- Keep `logo_qola.png`, `css/`, `js/`, and `produk/` next to `Qola.html`. The pages use relative paths to reach each other.
-- The "Hari ini di Qola" panel is not connected to real data yet, so it shows labelled placeholders. To connect it, set `data-live-endpoint` on `<section id="hari-ini">` in `Qola.html` to a URL that returns the JSON described in `js/live.js`. `data-live-interval` sets the refresh interval in seconds (default 60). The endpoint must allow cross-origin requests if it is on another domain.
+- `index.html` loads the Inter font from Google Fonts, so an internet connection is needed for correct typography.
+- Keep `assets/brand/logo-qola.png`, `css/`, `js/`, and `produk/` next to `index.html`. The pages use relative paths to reach each other.
+- The "Hari ini di Qola" panel is not connected to real data yet, so it shows labelled placeholders. To connect it, set `data-live-endpoint` on `<section id="hari-ini">` in `index.html` to a URL that returns the JSON described in `js/live.js`. `data-live-interval` sets the refresh interval in seconds (default 60). The endpoint must allow cross-origin requests if it is on another domain.
 
 ## Contact
 

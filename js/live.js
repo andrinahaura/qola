@@ -146,7 +146,8 @@
   showDate();
   renderPlaceholder();
   var endpoint = sec.dataset.liveEndpoint;
-  if (!endpoint) return; // stays in placeholder state
+  if (!endpoint) return; // stays hidden on the landing page, in placeholder state
+  sec.hidden = false;
 
   function load() {
     showDate();
