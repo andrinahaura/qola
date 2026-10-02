@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Qola — Media Monitoring &amp; Analisis Sentimen Berbasis AI</title>
+<meta name="description" content="Pantau berita online dan media sosial dalam satu dashboard. Analisis sentimen, wawasan AI, dan laporan otomatis untuk tim humas dan brand. Coba gratis 7 hari.">
+<link rel="canonical" href="https://qola.id/">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Qola Media Intelligence">
+<meta property="og:locale" content="id_ID">
+<meta property="og:url" content="https://qola.id/">
+<meta property="og:title" content="Qola — Kendalikan narasi, bangun reputasi">
+<meta property="og:description" content="Media monitoring dan analisis sentimen berbasis AI untuk berita online dan media sosial di Indonesia. Coba gratis 7 hari.">
+<meta property="og:image" content="https://qola.id/assets/img/og-qola.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Dashboard Analisis Qola: total penyebutan, jangkauan, sentimen, dan grafik penyebutan">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Qola — Kendalikan narasi, bangun reputasi">
+<meta name="twitter:description" content="Media monitoring dan analisis sentimen berbasis AI untuk berita online dan media sosial di Indonesia.">
+<meta name="twitter:image" content="https://qola.id/assets/img/og-qola.jpg">
+<link rel="icon" href="assets/brand/logo-qola.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/qola.css">
+<script type="application/ld+json">
+[
+ {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Qola Media Intelligence",
+  "legalName": "PT. Cita Kelola Kreasi",
+  "url": "https://qola.id/",
+  "logo": "https://qola.id/assets/brand/logo-qola.png",
+  "email": "info@qola.id",
+  "address": {
+   "@type": "PostalAddress",
+   "streetAddress": "Wisma Korindo Lt. 6, Jl. Letjen M.T. Haryono Kav 62, Pancoran",
+   "addressLocality": "Jakarta Selatan",
+   "postalCode": "12780",
+   "addressCountry": "ID"
+  },
+  "sameAs": [
+   "https://www.linkedin.com/company/abhipraya"
+  ]
+ },
+ {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Qola",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "url": "https://qola.id/",
+  "description": "Platform media monitoring dan analisis sentimen berbasis AI untuk berita online dan media sosial di Indonesia.",
+  "offers": [
+   {
+    "@type": "Offer",
+    "name": "Lite",
+    "price": "1500000",
+    "priceCurrency": "IDR"
+   },
+   {
+    "@type": "Offer",
+    "name": "Basic",
+    "price": "8000000",
+    "priceCurrency": "IDR"
+   },
+   {
+    "@type": "Offer",
+    "name": "Pro",
+    "price": "12000000",
+    "priceCurrency": "IDR"
+   }
+  ]
+ },
+ {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "Apa itu Qola?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Platform media monitoring berbasis AI. Penyebutan dari berita dan media sosial disajikan jadi dashboard, wawasan, dan laporan."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Sumber apa saja yang dipantau?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Berita online, X, Instagram, Facebook, TikTok, YouTube, dan Threads. TikTok dan YouTube mulai paket Basic."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Bagaimana Qola membaca sentimen?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "AI melabeli tiap penyebutan positif, netral, atau negatif, disesuaikan untuk konteks Indonesia."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Apa itu skor pengaruh?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Nilai 0–10 untuk tiap sumber dan penulis. Makin tinggi, makin perlu ditanggapi lebih dulu."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Laporan apa saja yang bisa dibuat?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "PDF dan Excel dengan komponen pilihan, plus infografis PNG. Data hingga H-1. PDF dan Excel mulai paket Pro."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Apakah Qola bisa dicoba gratis?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Bisa. Semua fitur gratis selama 7 hari."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Bisakah Qola dihubungkan ke sistem kami?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "RSS feed mulai paket Basic, integrasi API mulai Pro, dashboard custom dan whitelabel di Enterprise."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Seberapa akurat wawasan AI-nya?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "AI bisa keliru, jadi verifikasi informasi penting. Mulai paket Basic, tim kami ikut mendampingi analisis."
+    }
+   }
+  ]
+ }
+]
+</script>
+</head>
+<body>
+<script>document.documentElement.classList.add('js');</script>
+
+<!-- Main nav: identical on every page (only the path prefix and the current-page marker change) -->
+<header class="nav" id="nav">
+  <div class="nav-bar">
+    <a href="#top" class="logo" aria-label="Qola, ke atas">
+      <img src="assets/brand/logo-qola.png" alt="Qola Media Intelligence" width="887" height="365">
+    </a>
+    <nav class="nav-links" id="nav-links" aria-label="Utama">
+      <div class="nav-drop">
+        <button type="button" class="nav-drop-btn" aria-expanded="false" aria-controls="drop-produk">
+          Produk
+          <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m2 3.5 3 3 3-3"/></svg>
+        </button>
+        <div class="drop-panel" id="drop-produk">
+          <div class="drop-menu">
+            <a class="drop-item" href="produk/index.html#monitoring">
+              <span class="drop-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h6M7 12h10M7 16h10"/></svg></span>
+              <span><b>Monitoring</b><small>Berita online dan media sosial dalam satu feed</small></span>
+            </a>
+            <a class="drop-item" href="produk/index.html#analisis-sentimen">
+              <span class="drop-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 14.5c.9 1.2 2.1 1.8 3.5 1.8s2.6-.6 3.5-1.8M9 9.5h.01M15 9.5h.01"/></svg></span>
+              <span><b>Analisis Sentimen</b><small>Positif, netral, atau negatif, otomatis</small></span>
+            </a>
+            <a class="drop-item" href="produk/index.html#peringatan-dini">
+              <span class="drop-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15z"/><path d="M10 21h4"/></svg></span>
+              <span><b>Peringatan Dini</b><small>Tahu lebih awal saat isu negatif mulai naik</small></span>
+            </a>
+            <a class="drop-item" href="produk/index.html#brief-laporan">
+              <span class="drop-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M9 17v-3M12 17v-5M15 17v-2"/></svg></span>
+              <span><b>Brief &amp; Laporan</b><small>Rangkuman AI dan laporan siap unduh</small></span>
+            </a>
+            <a class="drop-all" href="produk/index.html">Lihat semua produk <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+      <a href="#solusi">Solusi</a>
+      <a href="#harga">Harga</a>
+      <a href="berita/index.html">Berita</a>
+      <a href="https://dashboard.qola.id/" class="nav-signin">Masuk</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="https://dashboard.qola.id/register" class="btn btn-dark btn-sm">Coba gratis</a>
+      <button class="menu-btn" id="menu-btn" aria-label="Buka menu" aria-expanded="false" aria-controls="nav-links">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 5h12M2 11h12"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- Hero: copy alone on a sky field. On scroll, cards from the Qola dashboard (dev-dashboard-v2.qola.id, Analisis, 25 Sep–1 Okt 2026)
+     appear around the copy and fly into one dashboard window (js/hero.js). Start positions: data-from="x y scale" in frame px. -->
+<section class="hero" aria-labelledby="hero-title" data-build>
+  <div class="hero-stage">
+    <div class="hero-copy">
+      <h1 class="display" id="hero-title">Kendalikan narasi, bangun reputasi.</h1>
+      <p class="lede">Pantau berita dan media sosial, baca sentimen dengan AI, dapatkan laporan siap pakai.</p>
+      <div class="hero-cta">
+        <a href="https://dashboard.qola.id/register" class="btn btn-dark">Coba gratis 7 hari</a>
+        <a href="https://qola.id/contact" class="btn btn-light">Jadwalkan demo</a>
+      </div>
+      <p class="hero-proof">Semua fitur selama 7 hari · Berita online, X, Instagram, Facebook, TikTok, YouTube, Threads</p>
+    </div>
+
+    <div class="build" id="preview" role="img" aria-label="Halaman Analisis di dashboard Qola: total penyebutan, jangkauan, interaksi, estimasi PR value, sentimen sosial media dan berita, grafik performa penyebutan, dan penyebutan per kategori sumber">
+      <div class="build-frame">
+        <div class="build-win">
+          <div class="build-bar"><b class="scr-logo">QOLA</b><nav><span>Dashboard</span><span>Penyebutan</span><span class="on">Analisis</span><span>Kata Kunci</span><span>Wawasan</span><span>Konten</span><span>Sumber</span><span>Laporan</span><span>AI Assistant</span></nav><i></i></div>
+          <div class="build-rail"><b></b><i class="on"></i><i></i><i></i><i></i><i></i></div>
+          <div class="build-head"><b>Analisis</b><small>Pantau ringkasan performa dan wawasan data untuk proyek Anda</small></div>
+        </div>
+        <img class="piece" src="assets/img/dashboard/kpi-penyebutan.png" alt="" width="388" height="260" style="--x: 84px; --y: 140px; --w: 156px" data-from="990 250 0.95">
+        <img class="piece" src="assets/img/dashboard/kpi-jangkauan.png" alt="" width="386" height="260" style="--x: 252px; --y: 140px; --w: 156px" data-from="380 -330 0.9">
+        <img class="piece" src="assets/img/dashboard/kpi-interaksi.png" alt="" width="388" height="260" style="--x: 420px; --y: 140px; --w: 156px" data-from="1240 -120 0.9">
+        <img class="piece" src="assets/img/dashboard/kpi-pr.png" alt="" width="386" height="260" style="--x: 588px; --y: 140px; --w: 156px" data-from="-40 430 1">
+        <img class="piece piece-chart" src="assets/img/dashboard/chart.jpg" alt="" width="1764" height="784" style="--x: 84px; --y: 257px; --w: 660px" data-from="150 640 0.85">
+        <div class="piece piece-ask" style="--x: 84px; --y: 566px; --w: 660px" data-from="640 560 0.75"><span class="piece-ai">AI</span><span>Tanyakan tentang penyebutan atau berita…</span><i></i></div>
+        <img class="piece" src="assets/img/dashboard/sent-sosmed.png" alt="" width="388" height="396" style="--x: 764px; --y: 140px; --w: 158px" data-from="950 0 1">
+        <img class="piece" src="assets/img/dashboard/sent-berita.png" alt="" width="386" height="396" style="--x: 934px; --y: 140px; --w: 158px" data-from="1240 380 0.9">
+        <img class="piece" src="assets/img/dashboard/kategori.png" alt="" width="888" height="932" style="--x: 764px; --y: 313px; --w: 328px" data-from="-150 10 0.72">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Clients -->
+<section class="clients" aria-labelledby="clients-title">
+  <div class="wrap">
+    <h2 class="clients-title" id="clients-title">Dipercaya oleh</h2>
+    <!-- Ganti teks wordmark dengan <img src="..." alt="Nama klien"> saat file logo tersedia. -->
+    <ul class="logo-strip" aria-label="Klien">
+      <li>KOMINFO</li>
+      <li>PERTAMINA</li>
+      <li>PLN</li>
+      <li>UNILEVER</li>
+      <li>TELKOM</li>
+      <li>BRI</li>
+      <li>DISKOMINFO JABAR</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Problem as a conversation (after steep.app "Unlock deep analysis"): one AI Assistant chat with persona questions
+     around it, then three problem → answer columns. Example content only; questions follow the dashboard's suggestions. -->
+<section class="section convo-sec" id="masalah" aria-labelledby="problem-title">
+  <div class="wrap">
+    <div class="convo-head">
+      <p class="convo-eyebrow">Qola AI Assistant</p>
+      <h2 class="h2" id="problem-title">Tangkap isu sebelum jadi krisis.</h2>
+      <p class="lede">Tanya apa saja soal brand Anda. Qola menjawab langsung dari data yang Anda pantau.</p>
+      <a class="convo-link" href="#fitur">Lihat semua fitur <span aria-hidden="true">→</span></a>
+    </div>
+
+    <div class="convo" data-chat>
+      <figure class="chat" aria-label="Contoh percakapan dengan AI Assistant Qola">
+        <div class="chat-bar">
+          <span class="chat-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <b>AI Assistant · Proyek Brand Anda</b>
+          <span class="chat-new">+ Chat baru</span>
+        </div>
+        <div class="chat-body">
+          <p class="chat-q" data-step>Kenapa penyebutan negatif naik sejak kemarin?</p>
+          <p class="chat-reason" data-step>Penalaran <span aria-hidden="true">›</span></p>
+          <div class="chat-a" data-step>
+            <p><mark>Penyebutan negatif</mark> naik dari 1.248 ke 3.920 <b>(+214%)</b> dalam 24 jam. Tiga hal menjelaskannya:</p>
+            <ol>
+              <li><b>X jadi pemicu utama.</b> Keluhan pengiriman dari tiga akun dengan skor pengaruh 8–9 dibagikan ulang 2,1 rb kali.</li>
+              <li><b>Media daerah ikut memberitakan.</b> Enam portal berita di Sumatera Utara memuat keluhan yang sama.</li>
+              <li><b>TikTok masih kecil, tapi naik cepat.</b> Baru 14 video, jangkauannya sudah 180 rb.</li>
+            </ol>
+          </div>
+          <div class="chat-card" data-step aria-hidden="true">
+            <div class="chat-card-top"><b>Tren sentimen negatif</b><span>7 hari terakhir</span></div>
+            <svg viewBox="0 0 320 90" preserveAspectRatio="none">
+              <path d="M0 74 L53 72 L107 70 L160 73 L213 68 L267 46 L320 10" fill="none" stroke="#f87171" stroke-width="2" vector-effect="non-scaling-stroke"/>
+              <path d="M0 76 L53 75 L107 77 L160 74 L213 76 L267 75 L320 73" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="4 4" vector-effect="non-scaling-stroke"/>
+            </svg>
+            <div class="chat-legend"><span><i style="background:#f87171"></i>Minggu ini</span><span><i style="background:#cbd5e1"></i>Minggu lalu</span></div>
+          </div>
+        </div>
+        <div class="chat-input">
+          <span class="chat-typed" data-type="Media mana yang paling banyak memberitakan isu ini?">Media mana yang paling banyak memberitakan isu ini?</span>
+          <i aria-hidden="true">↑</i>
+        </div>
+        <figcaption>Contoh percakapan. AI dapat membuat kesalahan, verifikasi informasi penting.</figcaption>
+      </figure>
+
+      <div class="ask ask-a" data-ask>
+        <span class="ask-who"><i>R</i><b>Rina</b> Humas Pemda</span>
+        <p>Apa isu utama yang muncul dalam 30 hari terakhir?</p>
+      </div>
+      <div class="ask ask-b" data-ask>
+        <span class="ask-who"><i style="--c: #ebe6fe; --t: #6d5bd0">S</i><b>Sari</b> Brand Manager</span>
+        <p>Bagaimana sentimen penyebutan brand saya?</p>
+      </div>
+      <div class="ask ask-c" data-ask>
+        <span class="ask-who"><i style="--c: #ffe8da; --t: #c2410c">D</i><b>Dimas</b> Corporate Comms</span>
+        <p>Platform mana yang paling banyak menyebut keyword saya?</p>
+      </div>
+    </div>
+
+    <ul class="convo-points">
+      <li class="reveal">
+        <!-- Sources flow into Qola (after steep.app integrations). Brand marks: Simple Icons, CC0. -->
+        <div class="cp-visual cp-channels" aria-hidden="true">
+          <ul class="cp-src">
+            <li title="News"><i style="--c: #369477"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h13v14H6a2 2 0 0 1-2-2zM17 9h3v8a2 2 0 0 1-2 2M7 9h7M7 12h7M7 15h4"/></svg></i></li>
+            <li title="X"><i style="--c: #000"><svg viewBox="0 0 24 24"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg></i></li>
+            <li title="Instagram"><i style="--c: #e4405f"><svg viewBox="0 0 24 24"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></i></li>
+            <li title="Facebook"><i style="--c: #0866ff"><svg viewBox="0 0 24 24"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></i></li>
+            <li title="TikTok"><i style="--c: #000"><svg viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></i></li>
+            <li title="YouTube"><i style="--c: #ff0000"><svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></i></li>
+            <li title="Threads"><i style="--c: #000"><svg viewBox="0 0 24 24"><path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.589 12c.027 3.086.718 5.496 2.057 7.164 1.43 1.783 3.631 2.698 6.54 2.717 2.623-.02 4.358-.631 5.8-2.045 1.647-1.613 1.618-3.593 1.09-4.798-.31-.71-.873-1.3-1.634-1.75-.192 1.352-.622 2.446-1.284 3.272-.886 1.102-2.14 1.704-3.73 1.79-1.202.065-2.361-.218-3.259-.801-1.063-.689-1.685-1.74-1.752-2.964-.065-1.19.408-2.285 1.33-3.082.88-.76 2.119-1.207 3.583-1.291a13.853 13.853 0 0 1 3.02.142c-.126-.742-.375-1.332-.75-1.757-.513-.586-1.308-.883-2.359-.89h-.029c-.844 0-1.992.232-2.721 1.32L7.734 7.847c.98-1.454 2.568-2.256 4.478-2.256h.044c3.194.02 5.097 1.975 5.287 5.388.108.046.216.094.321.142 1.49.7 2.58 1.761 3.154 3.07.797 1.82.871 4.79-1.548 7.158-1.85 1.81-4.094 2.628-7.277 2.65Zm1.003-11.69c-.242 0-.487.007-.739.021-1.836.103-2.98.946-2.916 2.143.067 1.256 1.452 1.839 2.784 1.767 1.224-.065 2.818-.543 3.086-3.71a10.5 10.5 0 0 0-2.215-.221z"/></svg></i></li>
+          </ul>
+          <!-- One dashed path per source column (column centers at 50, 150 … 650 of 700), easing into the Qola node -->
+          <svg class="cp-lines" viewBox="0 0 700 46" preserveAspectRatio="none">
+            <path d="M50 0C50 30 326 14 326 46M150 0C150 30 334 14 334 46M250 0C250 30 342 14 342 46M350 0V46M450 0C450 30 358 14 358 46M550 0C550 30 366 14 366 46M650 0C650 30 374 14 374 46"/>
+          </svg>
+          <b><img src="assets/brand/logo-qola.png" alt="" width="887" height="365"></b>
+        </div>
+        <h3>7 kanal, satu feed</h3>
+        <p>Berita online dan enam media sosial, disaring dari satu tempat.</p>
+      </li>
+      <li class="reveal">
+        <div class="cp-visual cp-metrics" aria-hidden="true">
+          <dl>
+            <div><dt>Jangkauan</dt><dd>566,2 jt <span>+9%</span></dd></div>
+            <div><dt>Interaksi</dt><dd>99,7 rb <span>+4%</span></dd></div>
+            <div><dt>Est. PR value</dt><dd>Rp 2,3 M <span>+6%</span></dd></div>
+          </dl>
+        </div>
+        <h3>Fokus pada isu yang berdampak</h3>
+        <p>Jangkauan, interaksi, dan estimasi PR value di setiap isu.</p>
+      </li>
+      <li class="reveal">
+        <div class="cp-visual cp-report" aria-hidden="true">
+          <div class="cp-doc">
+            <small>Laporan mingguan</small>
+            <b>Ringkasan isu pengiriman</b>
+            <i></i><i class="short"></i>
+            <span class="cp-files"><em>PDF</em><em>Excel</em><em>PNG</em></span>
+          </div>
+        </div>
+        <h3>Laporan tanpa rekap manual</h3>
+        <p>Rangkuman AI dan laporan PDF, Excel, atau infografis, siap unduh.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- How it works: three steps, each with a screen from the product -->
+<section class="section section-tight" id="cara-kerja" data-nav="cara-kerja" aria-labelledby="how-title">
+  <div class="wrap">
+    <div class="section-head center">
+      <h2 class="h2" id="how-title">Dari kata kunci ke keputusan, dalam tiga langkah.</h2>
+      <p class="lede">Tanpa instalasi. Buat proyek, isi kata kunci, selesai.</p>
+    </div>
+
+    <ol class="tiles">
+      <li class="tile tile-coral reveal">
+        <h3>Tentukan kata kunci</h3>
+        <p>Buat proyek untuk brand, instansi, atau kampanye, lalu isi kata kunci.</p>
+        <div class="tile-shot tile-ui" aria-hidden="true">
+          <div class="kw">
+            <div class="kw-head"><b>Manajemen Kata Kunci</b><span class="kw-btn">+ Tambah Kata Kunci</span></div>
+            <ul class="kw-list">
+              <li><span># brand anda</span><span class="kw-up">↑ Naik</span></li>
+              <li><span># nama produk</span><span class="kw-up">↑ Naik</span></li>
+              <li><span># nama pimpinan</span><span class="kw-flat">→ Stabil</span></li>
+              <li><span># kampanye akhir tahun</span><span class="kw-up">↑ Naik</span></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="tile tile-lilac reveal">
+        <h3>Qola memantau tujuh kanal</h3>
+        <p>Berita online dan enam media sosial dikumpulkan dan diberi sentimen otomatis.</p>
+        <figure class="phone phone-tile">
+          <div class="phone-screen">
+            <img src="assets/img/hero/kategori.jpg" alt="Penyebutan berdasarkan kategori sumber di dashboard Qola: berita, Twitter, Instagram, TikTok, Facebook, Threads, dan YouTube" width="494" height="772" loading="lazy">
+          </div>
+        </figure>
+      </li>
+      <li class="tile tile-blue reveal">
+        <h3>Ambil keputusan dari data</h3>
+        <p>Apa yang dibicarakan, seberapa besar dampaknya, dan langkah berikutnya.</p>
+        <div class="tile-shot">
+          <img src="assets/img/hero/analisis.jpg" alt="Halaman Analisis Qola: total penyebutan, jangkauan, interaksi, estimasi PR value, dan sentimen" width="1824" height="1698" loading="lazy">
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- Feature deep dives -->
+<section class="section section-tight" id="fitur" data-nav="fitur" aria-labelledby="fitur-title">
+  <div class="wrap">
+    <div class="section-head center">
+      <h2 class="h2" id="fitur-title">Baca percakapan publik dalam satu dashboard.</h2>
+    </div>
+  </div>
+  <div class="wrap wides">
+
+    <article class="wide wide-blue reveal">
+      <div class="wide-copy">
+        <h3 class="h2">Tahu siapa yang bicara, dan seberapa berpengaruh.</h3>
+        <p>Penulis, sumber, jangkauan, dan sentimen tiap penyebutan, bisa disaring.</p>
+        <a class="text-link" href="produk/index.html#monitoring">Tentang monitoring</a>
+      </div>
+      <div class="wide-visual">
+        <div class="ui-card ui-feed" aria-label="Contoh daftar penyebutan di Qola">
+          <p class="ui-label">Penyebutan · Terbaru · Contoh data</p>
+          <ul>
+            <li>
+              <div class="ui-feed-top"><b>Portal berita nasional</b><span>News · 2 jam lalu</span><span class="chip pos">Positif</span></div>
+              <p>Brand Anda resmikan layanan pelanggan 24 jam di lima kota</p>
+              <dl><div><dt>Jangkauan</dt><dd>7.082</dd></div><div><dt>Skor pengaruh</dt><dd>9/10</dd></div><div><dt>Kata kunci</dt><dd>brand anda</dd></div></dl>
+            </li>
+            <li>
+              <div class="ui-feed-top"><b>@akunwarga</b><span>X · 3 jam lalu</span><span class="chip neg">Negatif</span></div>
+              <p>Sudah dua hari pesanan belum sampai, CS belum membalas</p>
+              <dl><div><dt>Jangkauan</dt><dd>1.240</dd></div><div><dt>Skor pengaruh</dt><dd>3/10</dd></div><div><dt>Kata kunci</dt><dd>brand anda</dd></div></dl>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <article class="wide wide-sand wide-flip reveal">
+      <div class="wide-copy">
+        <h3 class="h2">Lihat seberapa jauh isu Anda menyebar.</h3>
+        <p>Jangkauan, interaksi, sentimen, dan akun yang paling berpengaruh.</p>
+        <a class="text-link" href="produk/index.html#analisis-sentimen">Tentang analisis</a>
+      </div>
+      <div class="wide-visual">
+        <dl class="ui-facts compact">
+          <div><dt>Total jangkauan</dt><dd data-count="566.2" data-decimals="1" data-suffix=" jt">566,2 jt</dd><p>dari 60,5 rb penyebutan</p></div>
+          <div><dt>Interaksi</dt><dd data-count="99.7" data-decimals="1" data-suffix=" rb">99,7 rb</dd><p>dari media sosial</p></div>
+          <div class="wide-span"><dt>Sentimen berita</dt><dd data-count="58" data-suffix="%">58%</dd><p>positif · 32% netral · 10% negatif · Contoh data</p></div>
+        </dl>
+      </div>
+    </article>
+
+    <article class="wide wide-lilac reveal">
+      <div class="wide-copy">
+        <h3 class="h2">Saran langkah dari AI, setiap hari.</h3>
+        <p>Topik teratas, anomali, dan strategi yang disarankan, dirangkum otomatis.</p>
+        <a class="text-link" href="produk/index.html#brief-laporan">Tentang wawasan dan laporan</a>
+      </div>
+      <div class="wide-visual">
+        <div class="ui-card ui-doc" aria-label="Contoh wawasan AI Qola">
+          <p class="ui-label">Wawasan AI · Harian · Contoh data</p>
+          <h3>Anomali: lonjakan keluhan pengiriman</h3>
+          <ul>
+            <li>Penyebutan negatif naik tiga kali lipat dalam 24 jam, terbanyak dari X.</li>
+            <li>Korelasi: keluhan muncul bersamaan dengan promo akhir pekan.</li>
+            <li>Strategi: unggah estimasi pengiriman per wilayah dan balas keluhan teratas.</li>
+          </ul>
+          <div class="ui-sent" aria-hidden="true"><span style="width:52%"></span><span style="width:26%"></span><span style="width:22%"></span></div>
+          <dl class="ui-sentleg">
+            <div><dt>Positif</dt><dd data-count="52" data-suffix="%">52%</dd></div>
+            <div><dt>Netral</dt><dd data-count="26" data-suffix="%">26%</dd></div>
+            <div><dt>Negatif</dt><dd data-count="22" data-suffix="%">22%</dd></div>
+          </dl>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- Use cases: list on the left, the matching screen on the right -->
+<section class="section" id="penggunaan" data-nav="fitur" aria-labelledby="uc-title">
+  <div class="wrap more">
+    <div class="more-list">
+      <h2 class="h2" id="uc-title">Masih ada lagi.</h2>
+      <p class="lede">Fitur lain untuk menggali lebih dalam dan berbagi hasil.</p>
+      <!-- Feature list (after bevel.health "And that's not all"): the active card plays for a few seconds, its ring fills,
+           then the next card takes over. Click a card to show it; click the active card to pause or resume. -->
+      <div class="uc-list" data-feats>
+        <button type="button" class="feat is-active" data-screen="kata-kunci" aria-pressed="true">
+          <span class="feat-copy"><b>Kata Kunci &amp; Tren</b><span>Atur kata kunci dan lihat trennya per hari, minggu, atau bulan.</span></span>
+          <span class="feat-ctl" aria-hidden="true"><svg class="feat-ring" viewBox="0 0 40 40"><circle cx="20" cy="20" r="19"/><circle class="feat-prog" cx="20" cy="20" r="19" pathLength="100"/></svg><svg class="feat-ico feat-arrow" viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4"/></svg><svg class="feat-ico feat-pause" viewBox="0 0 16 16"><path d="M6 4v8M10 4v8"/></svg><svg class="feat-ico feat-play" viewBox="0 0 16 16"><path d="M5.5 3.8v8.4L12 8z"/></svg></span>
+        </button>
+        <button type="button" class="feat" data-screen="wawasan-topik" aria-pressed="false">
+          <span class="feat-copy"><b>Wawasan Topik</b><span>AI mengelompokkan penyebutan jadi topik, lengkap dengan volume dan sentimen.</span></span>
+          <span class="feat-ctl" aria-hidden="true"><svg class="feat-ring" viewBox="0 0 40 40"><circle cx="20" cy="20" r="19"/><circle class="feat-prog" cx="20" cy="20" r="19" pathLength="100"/></svg><svg class="feat-ico feat-arrow" viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4"/></svg><svg class="feat-ico feat-pause" viewBox="0 0 16 16"><path d="M6 4v8M10 4v8"/></svg><svg class="feat-ico feat-play" viewBox="0 0 16 16"><path d="M5.5 3.8v8.4L12 8z"/></svg></span>
+        </button>
+        <button type="button" class="feat" data-screen="wawasan-geo" aria-pressed="false">
+          <span class="feat-copy"><b>Wawasan Geografis</b><span>Daerah yang paling ramai membicarakan Anda, plus anomalinya.</span></span>
+          <span class="feat-ctl" aria-hidden="true"><svg class="feat-ring" viewBox="0 0 40 40"><circle cx="20" cy="20" r="19"/><circle class="feat-prog" cx="20" cy="20" r="19" pathLength="100"/></svg><svg class="feat-ico feat-arrow" viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4"/></svg><svg class="feat-ico feat-pause" viewBox="0 0 16 16"><path d="M6 4v8M10 4v8"/></svg><svg class="feat-ico feat-play" viewBox="0 0 16 16"><path d="M5.5 3.8v8.4L12 8z"/></svg></span>
+        </button>
+        <button type="button" class="feat" data-screen="konten" aria-pressed="false">
+          <span class="feat-copy"><b>Rekomendasi Konten</b><span>Ide konten dan langkah komunikasi untuk tiap topik.</span></span>
+          <span class="feat-ctl" aria-hidden="true"><svg class="feat-ring" viewBox="0 0 40 40"><circle cx="20" cy="20" r="19"/><circle class="feat-prog" cx="20" cy="20" r="19" pathLength="100"/></svg><svg class="feat-ico feat-arrow" viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4"/></svg><svg class="feat-ico feat-pause" viewBox="0 0 16 16"><path d="M6 4v8M10 4v8"/></svg><svg class="feat-ico feat-play" viewBox="0 0 16 16"><path d="M5.5 3.8v8.4L12 8z"/></svg></span>
+        </button>
+        <button type="button" class="feat" data-screen="laporan" aria-pressed="false">
+          <span class="feat-copy"><b>Laporan Otomatis</b><span>Pilih komponen, unduh sebagai PDF, Excel, atau infografis.</span></span>
+          <span class="feat-ctl" aria-hidden="true"><svg class="feat-ring" viewBox="0 0 40 40"><circle cx="20" cy="20" r="19"/><circle class="feat-prog" cx="20" cy="20" r="19" pathLength="100"/></svg><svg class="feat-ico feat-arrow" viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4"/></svg><svg class="feat-ico feat-pause" viewBox="0 0 16 16"><path d="M6 4v8M10 4v8"/></svg><svg class="feat-ico feat-play" viewBox="0 0 16 16"><path d="M5.5 3.8v8.4L12 8z"/></svg></span>
+        </button>
+        <button type="button" class="feat" data-screen="ai" aria-pressed="false">
+          <span class="feat-copy"><b>AI Assistant</b><span>Tanya apa saja soal data Anda, dijawab dalam Bahasa Indonesia.</span></span>
+          <span class="feat-ctl" aria-hidden="true"><svg class="feat-ring" viewBox="0 0 40 40"><circle cx="20" cy="20" r="19"/><circle class="feat-prog" cx="20" cy="20" r="19" pathLength="100"/></svg><svg class="feat-ico feat-arrow" viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4"/></svg><svg class="feat-ico feat-pause" viewBox="0 0 16 16"><path d="M6 4v8M10 4v8"/></svg><svg class="feat-ico feat-play" viewBox="0 0 16 16"><path d="M5.5 3.8v8.4L12 8z"/></svg></span>
+        </button>
+      </div>
+    </div>
+    <!-- One laptop, one dashboard page per feature. Layout follows the Qola dashboard (dev-dashboard-v2.qola.id, Okt 2026); isi layar contoh, bukan data klien. -->
+    <figure class="laptop laptop-air uc-device" aria-hidden="true">
+      <div class="laptop-lid">
+        <span class="laptop-cam"></span>
+        <div class="laptop-screen" id="uc-screens">
+          <div class="scr on" data-screen="kata-kunci">
+            <div class="scr-side"><b></b><i class="on"></i><i></i><i></i><i></i><i></i></div>
+            <div class="scr-bar"><b class="scr-logo">QOLA</b><nav><span>Dashboard</span><span>Penyebutan</span><span>Analisis</span><span class="on">Kata Kunci</span><span>Wawasan</span><span>Konten</span><span>Sumber</span><span>Laporan</span><span>AI Assistant</span></nav><i class="scr-me"></i></div>
+            <div class="scr-body">
+              <div class="scr-head"><b>Pengaturan dan Analisis Kata Kunci</b><small>Pantau performa tren pencarian untuk proyek Brand Anda</small></div>
+              <div class="scr-card">
+                <div class="scr-row"><b>Manajemen Kata Kunci</b><span class="scr-btn">+ Tambah Kata Kunci</span></div>
+                <table class="scr-table">
+                  <tr><th>Kata Kunci</th><th>Total Pencarian</th><th>Tren</th></tr>
+                  <tr><td># brand anda</td><td>4.143</td><td class="up">↑ Naik</td></tr>
+                  <tr><td># layanan pelanggan</td><td>1.208</td><td class="up">↑ Naik</td></tr>
+                  <tr><td># promo akhir tahun</td><td>559</td><td class="down">↓ Turun</td></tr>
+                </table>
+              </div>
+              <div class="scr-card">
+                <div class="scr-row"><b>Grafik Tren</b><span class="scr-seg"><span class="on">Harian</span><span>Mingguan</span><span>Bulanan</span></span></div>
+                <svg class="scr-line" viewBox="0 0 300 70" preserveAspectRatio="none">
+                  <path d="M0 22 C30 26 45 52 75 52 S120 50 150 34 S205 6 225 14 S265 40 300 60 L300 70 L0 70 Z" fill="rgba(54, 148, 119, 0.12)"/>
+                  <path d="M0 22 C30 26 45 52 75 52 S120 50 150 34 S205 6 225 14 S265 40 300 60" fill="none" stroke="#369477" stroke-width="2" vector-effect="non-scaling-stroke"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="scr" data-screen="wawasan-topik">
+            <div class="scr-side"><b></b><i class="on"></i><i></i><i></i><i></i><i></i></div>
+            <div class="scr-bar"><b class="scr-logo">QOLA</b><nav><span>Dashboard</span><span>Penyebutan</span><span>Analisis</span><span>Kata Kunci</span><span class="on">Wawasan</span><span>Konten</span><span>Sumber</span><span>Laporan</span><span>AI Assistant</span></nav><i class="scr-me"></i></div>
+            <div class="scr-body">
+              <div class="scr-head"><b>Wawasan</b><small>Temukan korelasi data dan strategi melalui analisis ruang sentimen</small></div>
+              <div class="scr-card">
+                <b>Topik Teratas (Berita)</b>
+                <table class="scr-table scr-topics">
+                  <tr><th>Topik</th><th>Deskripsi</th><th>Volume</th><th>Sentimen</th></tr>
+                  <tr><td><b>Layanan Pelanggan</b></td><td>Respons CS yang makin cepat banyak diapresiasi pembaca dan warganet.</td><td>34%</td><td><span class="chip pos">Positif</span></td></tr>
+                  <tr><td><b>Peluncuran Produk</b></td><td>Produk baru diliput media nasional, fokus pada fitur dan harga.</td><td>26%</td><td><span class="chip pos">Positif</span></td></tr>
+                  <tr><td><b>Harga &amp; Promo</b></td><td>Diskusi soal periode promo dan perbandingan harga dengan pesaing.</td><td>22%</td><td><span class="chip neu">Netral</span></td></tr>
+                  <tr><td><b>Pengiriman</b></td><td>Keluhan keterlambatan di beberapa kota mulai diberitakan.</td><td>18%</td><td><span class="chip neg">Negatif</span></td></tr>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="scr" data-screen="wawasan-geo">
+            <div class="scr-side"><b></b><i class="on"></i><i></i><i></i><i></i><i></i></div>
+            <div class="scr-bar"><b class="scr-logo">QOLA</b><nav><span>Dashboard</span><span>Penyebutan</span><span>Analisis</span><span>Kata Kunci</span><span class="on">Wawasan</span><span>Konten</span><span>Sumber</span><span>Laporan</span><span>AI Assistant</span></nav><i class="scr-me"></i></div>
+            <div class="scr-body">
+              <div class="scr-head"><b>Wawasan Geografis</b><small>Daerah dengan percakapan terbanyak tentang Brand Anda</small></div>
+              <div class="scr-card">
+                <table class="scr-table scr-topics">
+                  <tr><th>Wilayah</th><th>Deskripsi</th><th>Volume</th><th>Sentimen</th></tr>
+                  <tr><td><b>DKI Jakarta</b></td><td>Pusat pemberitaan peluncuran dan acara media.</td><td>40%</td><td><span class="chip pos">Positif</span></td></tr>
+                  <tr><td><b>Jawa Barat</b></td><td>Pembukaan gerai baru ramai dibahas warga lokal.</td><td>25%</td><td><span class="chip pos">Positif</span></td></tr>
+                  <tr><td><b>Jawa Timur</b></td><td>Perbandingan harga dengan merek lain.</td><td>15%</td><td><span class="chip neu">Netral</span></td></tr>
+                  <tr><td><b>Sumatera Utara</b></td><td>Keluhan pengiriman yang terlambat.</td><td>8%</td><td><span class="chip neg">Negatif</span></td></tr>
+                </table>
+              </div>
+              <div class="scr-card scr-anomali">
+                <small>Anomali</small>
+                <b>Lonjakan penyebutan positif di Jawa Barat</b>
+                <p>Naik tiga kali lipat dalam dua hari setelah pembukaan gerai baru.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="scr" data-screen="konten">
+            <div class="scr-side"><b></b><i class="on"></i><i></i><i></i><i></i><i></i></div>
+            <div class="scr-bar"><b class="scr-logo">QOLA</b><nav><span>Dashboard</span><span>Penyebutan</span><span>Analisis</span><span>Kata Kunci</span><span>Wawasan</span><span class="on">Konten</span><span>Sumber</span><span>Laporan</span><span>AI Assistant</span></nav><i class="scr-me"></i></div>
+            <div class="scr-body">
+              <div class="scr-head"><b>Rekomendasi Konten</b><small>Ide konten dari topik yang sedang dibicarakan</small></div>
+              <div class="scr-recs">
+                <div class="scr-card scr-rec">
+                  <b>Kisah Respons Cepat Tim Layanan Pelanggan</b>
+                  <span class="scr-icons"><i></i><i></i></span>
+                  <p class="scr-quote"><em>Wawasan:</em> Respons CS yang lebih cepat banyak diapresiasi di media sosial.</p>
+                  <ul><li>Publikasikan video di balik layar tim layanan pelanggan.</li><li>Bagikan infografis waktu respons rata-rata.</li></ul>
+                  <span class="scr-tags"><span>layanan pelanggan</span><span>testimoni</span></span>
+                  <span class="scr-ghost">Lihat Topik</span>
+                </div>
+                <div class="scr-card scr-rec">
+                  <b>Klarifikasi Jadwal Pengiriman per Wilayah</b>
+                  <span class="scr-icons"><i></i><i></i></span>
+                  <p class="scr-quote"><em>Wawasan:</em> Keluhan keterlambatan pengiriman naik di Sumatera Utara.</p>
+                  <ul><li>Unggah pengumuman estimasi pengiriman per wilayah.</li><li>Balas keluhan teratas dengan nomor pelacakan.</li></ul>
+                  <span class="scr-tags"><span>pengiriman</span><span>klarifikasi</span></span>
+                  <span class="scr-ghost">Lihat Topik</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="scr" data-screen="laporan">
+            <div class="scr-side"><b></b><i class="on"></i><i></i><i></i><i></i><i></i></div>
+            <div class="scr-bar"><b class="scr-logo">QOLA</b><nav><span>Dashboard</span><span>Penyebutan</span><span>Analisis</span><span>Kata Kunci</span><span>Wawasan</span><span>Konten</span><span>Sumber</span><span class="on">Laporan</span><span>AI Assistant</span></nav><i class="scr-me"></i></div>
+            <div class="scr-body">
+              <div class="scr-head"><b>Konfigurasi Laporan</b><small>Pilih komponen data yang akan disertakan dalam dokumen</small></div>
+              <div class="scr-card">
+                <span class="scr-tabs"><span class="on">Laporan PDF</span><span>Laporan Excel</span><span>Laporan Infografis</span></span>
+                <small class="scr-label">Ringkasan &amp; Statistik</small>
+                <div class="scr-tgs"><span class="scr-tg"><span><b>Rangkuman &amp; Wawasan</b><small>Ringkasan otomatis</small></span><i></i></span><span class="scr-tg"><span><b>Statistik Umum</b><small>Metrik performa media</small></span><i></i></span><span class="scr-tg"><span><b>Grafik Penyebutan</b><small>Tren sepanjang waktu</small></span><i></i></span><span class="scr-tg"><span><b>Grafik Sentimen</b><small>Analisis sentimen</small></span><i></i></span><span class="scr-tg"><span><b>Konteks Percakapan</b><small>Topik terbanyak</small></span><i></i></span><span class="scr-tg"><span><b>Per Kata Kunci</b><small>Analisis per kata kunci</small></span><i></i></span></div>
+                <small class="scr-label">Media &amp; Konten</small>
+                <div class="scr-tgs"><span class="scr-tg"><span><b>Berita Terpopuler</b><small>Engagement tertinggi</small></span><i></i></span><span class="scr-tg"><span><b>Sumber Berita</b><small>Kontribusi terbanyak</small></span><i></i></span><span class="scr-tg"><span><b>Rekomendasi</b><small>Saran konten</small></span><i></i></span></div>
+                <div class="scr-row scr-end"><span class="scr-btn">Unduh Laporan PDF</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="scr" data-screen="ai">
+            <div class="scr-side"><b></b><i class="on"></i><i></i><i></i><i></i><i></i></div>
+            <div class="scr-bar"><b class="scr-logo">QOLA</b><nav><span>Dashboard</span><span>Penyebutan</span><span>Analisis</span><span>Kata Kunci</span><span>Wawasan</span><span>Konten</span><span>Sumber</span><span>Laporan</span><span class="on">AI Assistant</span></nav><i class="scr-me"></i></div>
+            <div class="scr-body scr-chat">
+              <p class="scr-ask">Apa isu utama yang muncul dalam 30 hari terakhir?</p>
+              <div class="scr-answer">
+                <span class="scr-ai">AI</span>
+                <div>
+                  <p>Ada tiga isu utama tentang Brand Anda:</p>
+                  <ol>
+                    <li><b>Keterlambatan pengiriman</b>: 1.248 penyebutan, 72% negatif, terbanyak dari Sumatera Utara.</li>
+                    <li><b>Peluncuran produk baru</b>: diliput 48 media, sentimen mayoritas positif.</li>
+                    <li><b>Promo akhir tahun</b>: banyak pertanyaan soal periode promo, sentimen netral.</li>
+                  </ol>
+                </div>
+              </div>
+              <div class="scr-suggest"><span>Bagaimana sentimen penyebutan brand saya?</span><span>Platform mana yang paling banyak menyebut keyword saya?</span></div>
+              <div class="scr-input"><span>Tanyakan tentang penyebutan atau berita…</span><i></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="laptop-base"><span class="laptop-notch"></span></div>
+    </figure>
+  </div>
+</section>
+
+<!-- Live today (dark): dashboard preview filled by js/live.js. Hidden until data-live-endpoint is set (js/live.js unhides it).
+     Set data-live-endpoint to a JSON URL to show real data (schema in js/live.js).
+     Left empty, the panel shows labelled placeholders instead of numbers. -->
+<section class="section dark live-sec" id="hari-ini" data-live-endpoint="" data-live-interval="60" data-state="placeholder" aria-labelledby="live-title" hidden>
+  <div class="wrap">
+    <div class="section-head center">
+      <h2 class="h2" id="live-title"><span class="accent">Lihat langsung</span> apa yang dibicarakan hari ini.</h2>
+      <p class="lede">Volume, sentimen, isu teratas, dan lonjakan terbaru dari percakapan yang dipantau.</p>
+    </div>
+
+    <div class="lv reveal">
+      <div class="lv-head">
+        <span class="lv-status"><span class="lv-dot" aria-hidden="true"></span><span id="lv-status">Menunggu data</span></span>
+        <span class="lv-date" id="lv-date"></span>
+        <span class="badge line lv-ph-badge">Placeholder · data real-time belum terhubung</span>
+      </div>
+
+      <div class="lv-metrics">
+        <div class="lv-metric">
+          <span class="lv-label">Total mentions hari ini</span>
+          <b class="lv-value num" id="lv-total">—</b>
+          <span class="lv-note" id="lv-total-note">Menunggu data</span>
+        </div>
+        <div class="lv-metric">
+          <span class="lv-label">Sentimen hari ini</span>
+          <div class="lv-sent" aria-hidden="true"><span id="lv-pos-bar"></span><span id="lv-neu-bar"></span><span id="lv-neg-bar"></span></div>
+          <dl class="lv-sentleg">
+            <div><i style="background: var(--color-recovery-green)"></i><dt>Positif</dt><dd id="lv-pos">—</dd></div>
+            <div><i style="background: var(--color-silver)"></i><dt>Netral</dt><dd id="lv-neu">—</dd></div>
+            <div><i style="background: var(--color-coral-signal)"></i><dt>Negatif</dt><dd id="lv-neg">—</dd></div>
+          </dl>
+        </div>
+        <div class="lv-metric">
+          <span class="lv-label">Lonjakan percakapan</span>
+          <b class="lv-value num" id="lv-spike">—</b>
+          <span class="lv-note" id="lv-spike-note">Menunggu data</span>
+        </div>
+      </div>
+
+      <div class="lv-body">
+        <div class="lv-chart">
+          <div class="lv-sub"><span>Percakapan per jam</span><span>WIB</span></div>
+          <div class="lv-bars" id="lv-bars"></div>
+          <div class="chart-axis"><span>00</span><span>06</span><span>12</span><span>18</span><span>23</span></div>
+        </div>
+        <div class="lv-side">
+          <div class="lv-block">
+            <div class="lv-sub"><span>Top topik hari ini</span><span>mentions</span></div>
+            <ol class="lv-topics" id="lv-topics"></ol>
+          </div>
+          <div class="lv-block">
+            <div class="lv-sub"><span>Trending keyword</span><span>vs kemarin</span></div>
+            <ul class="lv-keys" id="lv-keys"></ul>
+          </div>
+          <div class="lv-block">
+            <div class="lv-sub"><span>Sumber media paling aktif</span></div>
+            <ul class="lv-sources" id="lv-sources"></ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="lv-ticker">
+        <span class="lv-ticker-label">Insight terbaru</span>
+        <div class="lv-ticker-track"><div class="lv-ticker-run" id="lv-ticker"></div></div>
+      </div>
+    </div>
+    <p class="lv-foot" id="lv-foot">Mode development: panel ini belum terhubung ke data Qola. Isi atribut <code>data-live-endpoint</code> pada section ini dengan URL JSON untuk menampilkan data real-time.</p>
+  </div>
+</section>
+
+<!-- Who it is for: one user story per team -->
+<section class="section" id="solusi" data-nav="solusi" aria-labelledby="solusi-title">
+  <div class="wrap">
+    <div class="section-head center">
+      <h2 class="h2" id="solusi-title">Dibuat untuk tim yang menjaga reputasi.</h2>
+      <p class="lede">Satu dashboard, banyak cara pakai.</p>
+    </div>
+    <!-- Personas as a chat: each team says what it needs, Qola answers with the features it uses.
+         A 12-column grid with fixed offsets per bubble, so it reads loose but every edge still lands on a column. -->
+    <ul class="bubbles">
+      <li class="bubble">
+        <p class="bubble-who"><i style="--c: #ebe6fe; --t: #6d5bd0" aria-hidden="true">HP</i>Humas pemerintah</p>
+        <blockquote class="bubble-msg">Saya perlu tahu isu daerah yang mulai ramai, sebelum hoaks menyebar.</blockquote>
+        <div class="bubble-reply"><span class="bubble-q" aria-hidden="true">Q</span><span class="sr-only">Qola menjawab dengan:</span><ul><li>Wawasan geografis</li><li>Anomali</li><li>Laporan PDF untuk pimpinan</li></ul></div>
+      </li>
+      <li class="bubble">
+        <p class="bubble-who"><i style="--c: #ffe8da; --t: #c2410c" aria-hidden="true">PR</i>PR &amp; corporate communication</p>
+        <blockquote class="bubble-msg">Saya perlu mengukur liputan rilis dan nilai medianya dalam angka.</blockquote>
+        <div class="bubble-reply"><span class="bubble-q" aria-hidden="true">Q</span><span class="sr-only">Qola menjawab dengan:</span><ul><li>Est. PR value</li><li>Sumber paling berpengaruh</li><li>Laporan Excel</li></ul></div>
+      </li>
+      <li class="bubble">
+        <p class="bubble-who"><i style="--c: #dbeafe; --t: #1d4ed8" aria-hidden="true">BM</i>Brand &amp; marketing</p>
+        <blockquote class="bubble-msg">Saya perlu tahu respons audiens pada kampanye dan kompetitor.</blockquote>
+        <div class="bubble-reply"><span class="bubble-q" aria-hidden="true">Q</span><span class="sr-only">Qola menjawab dengan:</span><ul><li>Tren kata kunci</li><li>Analisis influencer</li><li>Rekomendasi konten</li></ul></div>
+      </li>
+      <li class="bubble">
+        <p class="bubble-who"><i style="--c: #fef3c7; --t: #b45309" aria-hidden="true">AK</i>Agensi &amp; konsultan</p>
+        <blockquote class="bubble-msg">Laporan bulanan untuk banyak klien harus siap dalam hitungan menit.</blockquote>
+        <div class="bubble-reply"><span class="bubble-q" aria-hidden="true">Q</span><span class="sr-only">Qola menjawab dengan:</span><ul><li>Multi-proyek</li><li>PDF, Excel, infografis</li><li>Dashboard whitelabel</li></ul></div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- Pricing: plans and prices from qola.id/price (Okt 2026) -->
+<section class="section" id="harga" data-nav="harga" aria-labelledby="price-title">
+  <div class="wrap">
+    <div class="section-head center">
+      <h2 class="h2" id="price-title">Paket untuk setiap skala tim.</h2>
+      <p class="lede">Harga dalam Rupiah. Semua paket bisa dicoba gratis 7 hari.</p>
+      <div class="billing" role="group" aria-label="Periode tagihan">
+        <button type="button" aria-pressed="true" data-cycle="month">Bulanan</button>
+        <button type="button" aria-pressed="false" data-cycle="year">Tahunan <span class="save">hemat 2 bulan</span></button>
+      </div>
+    </div>
+
+    <div class="plans">
+      <article class="plan">
+        <div class="plan-top"><h3>Lite</h3></div>
+        <p class="plan-for">Untuk tim kecil yang mulai memantau satu brand.</p>
+        <div class="price"><b data-month="Rp 1,5 jt" data-year="Rp 1,25 jt">Rp 1,5 jt</b><span>/ bulan</span></div>
+        <p class="price-note" data-month="Ditagih bulanan" data-year="Ditagih Rp 15 jt per tahun">Ditagih bulanan</p>
+        <a href="https://dashboard.qola.id/register" class="btn btn-outline btn-block">Coba gratis 7 hari</a>
+        <ul>
+          <li>1 proyek dan 3 kata kunci</li>
+          <li>10.000 penyebutan</li>
+          <li>1 pengguna</li>
+          <li>Berita online, X, Instagram, dan Facebook</li>
+          <li>Analisis sentimen dan fitur AI dasar</li>
+        </ul>
+      </article>
+      <article class="plan">
+        <div class="plan-top"><h3>Basic</h3></div>
+        <p class="plan-for">Untuk tim humas dan marketing dengan isu harian.</p>
+        <div class="price"><b data-month="Rp 8 jt" data-year="Rp 6,67 jt">Rp 8 jt</b><span>/ bulan</span></div>
+        <p class="price-note" data-month="Ditagih bulanan" data-year="Ditagih Rp 80 jt per tahun">Ditagih bulanan</p>
+        <a href="https://dashboard.qola.id/register" class="btn btn-outline btn-block">Coba gratis 7 hari</a>
+        <ul>
+          <li class="head">Semua di Lite, plus:</li>
+          <li>3 proyek, kata kunci tak terbatas</li>
+          <li>50.000 penyebutan</li>
+          <li>10 pengguna</li>
+          <li>TikTok dan YouTube</li>
+          <li>Wawasan AI dan rekomendasi konten</li>
+          <li>Analisis sumber dan influencer</li>
+          <li>RSS feed, pelatihan, dan pendampingan analisis data</li>
+        </ul>
+      </article>
+      <article class="plan dark">
+        <div class="plan-top"><h3>Pro</h3><span class="badge sprout">AI tingkat lanjut</span></div>
+        <p class="plan-for">Untuk tim komunikasi yang butuh wawasan dan laporan lengkap.</p>
+        <div class="price"><b data-month="Rp 12 jt" data-year="Rp 10 jt">Rp 12 jt</b><span>/ bulan</span></div>
+        <p class="price-note" data-month="Ditagih bulanan" data-year="Ditagih Rp 120 jt per tahun">Ditagih bulanan</p>
+        <a href="https://dashboard.qola.id/register" class="btn btn-dark btn-block">Coba gratis 7 hari</a>
+        <ul>
+          <li class="head">Semua di Basic, plus:</li>
+          <li>5 proyek</li>
+          <li>100.000 penyebutan</li>
+          <li>Pengguna tak terbatas</li>
+          <li>Topik teratas dan wawasan geografis</li>
+          <li>Laporan PDF dan Excel</li>
+          <li>Integrasi API</li>
+        </ul>
+      </article>
+      <article class="plan">
+        <div class="plan-top"><h3>Enterprise</h3></div>
+        <p class="plan-for">Untuk kementerian, BUMN, grup perusahaan, dan agensi.</p>
+        <div class="price"><b>Custom</b></div>
+        <p class="price-note">Disesuaikan dengan kebutuhan</p>
+        <a href="https://qola.id/contact" class="btn btn-outline btn-block">Hubungi kami</a>
+        <ul>
+          <li class="head">Semua di Pro, plus:</li>
+          <li>Proyek tak terbatas</li>
+          <li>500.000 penyebutan</li>
+          <li>Dashboard custom dan whitelabel</li>
+          <li>Kebutuhan khusus sesuai organisasi Anda</li>
+        </ul>
+      </article>
+    </div>
+    <p class="plans-note">Butuh kuota atau fitur khusus? <a href="https://qola.id/contact">Hubungi tim kami</a>.</p>
+  </div>
+</section>
+
+<!-- FAQ (mirrored in the FAQPage JSON-LD in <head>) -->
+<!-- FAQ: title left, questions as a plain list with a chevron (opens to the answer) -->
+<section class="section faq-sec" id="faq" data-nav="faq" aria-labelledby="faq-title">
+  <div class="wrap faq">
+    <div class="section-head">
+      <h2 class="h2" id="faq-title">Pertanyaan yang sering diajukan.</h2>
+    </div>
+    <div class="qa-list">
+      <details class="qa"><summary>Apa itu Qola?</summary><p>Platform media monitoring berbasis AI. Penyebutan dari berita dan media sosial disajikan jadi dashboard, wawasan, dan laporan.</p></details>
+      <details class="qa"><summary>Sumber apa saja yang dipantau?</summary><p>Berita online, X, Instagram, Facebook, TikTok, YouTube, dan Threads. TikTok dan YouTube mulai paket Basic.</p></details>
+      <details class="qa"><summary>Bagaimana Qola membaca sentimen?</summary><p>AI melabeli tiap penyebutan positif, netral, atau negatif, disesuaikan untuk konteks Indonesia.</p></details>
+      <details class="qa"><summary>Apa itu skor pengaruh?</summary><p>Nilai 0–10 untuk tiap sumber dan penulis. Makin tinggi, makin perlu ditanggapi lebih dulu.</p></details>
+      <details class="qa"><summary>Laporan apa saja yang bisa dibuat?</summary><p>PDF dan Excel dengan komponen pilihan, plus infografis PNG. Data hingga H-1. PDF dan Excel mulai paket Pro.</p></details>
+      <details class="qa"><summary>Apakah Qola bisa dicoba gratis?</summary><p>Bisa. Semua fitur gratis selama 7 hari.</p></details>
+      <details class="qa"><summary>Bisakah Qola dihubungkan ke sistem kami?</summary><p>RSS feed mulai paket Basic, integrasi API mulai Pro, dashboard custom dan whitelabel di Enterprise.</p></details>
+      <details class="qa"><summary>Seberapa akurat wawasan AI-nya?</summary><p>AI bisa keliru, jadi verifikasi informasi penting. Mulai paket Basic, tim kami ikut mendampingi analisis.</p></details>
+    </div>
+    <p class="faq-more">Pertanyaan lain? Tulis ke <a href="mailto:info@qola.id">info@qola.id</a>.</p>
+  </div>
+</section>
+
+<!-- News: one highlighted article (popular, else newest) and the next two, from data/news.js via js/news.js -->
+<section class="section" id="berita" data-nav="berita" aria-labelledby="news-title">
+  <div class="wrap">
+    <div class="news-head">
+      <div>
+        <h2 class="h2" id="news-title">Berita &amp; insight.</h2>
+        <p class="lede">Tren media, isu terkini, dan kabar dari Qola.</p>
+      </div>
+      <a href="berita/index.html" class="btn btn-light">Lihat semua berita</a>
+    </div>
+    <div class="news-grid" data-news data-news-layout="featured" data-news-limit="3" data-news-base=""></div>
+    <!-- Empty data/news.js shows placeholder cards. Mark one article popular: true to highlight it; the next two newest sit beside it. -->
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section cta" id="mulai" aria-labelledby="cta-title">
+  <div class="wrap cta-inner">
+    <h2 class="display" id="cta-title">Isu berikutnya bisa muncul malam ini.</h2>
+    <p class="lede">Siapkan Qola sekarang. Gratis 7 hari, semua fitur terbuka.</p>
+    <div class="cta-actions">
+      <a href="https://dashboard.qola.id/register" class="btn btn-dark">Coba gratis 7 hari</a>
+      <a href="https://qola.id/contact" class="btn btn-light">Jadwalkan demo</a>
+    </div>
+  </div>
+  <!-- Qola on every screen (after the Things 3 device collage). Screens follow the real dashboard (dev-dashboard-v2.qola.id,
+       Okt 2026): top tab bar, project rail on the left, Penyebutan cards, Wawasan cards, Analisis KPIs.
+       Example data only, never client data.
+       Every device is shown whole; the section ends on white, straight into the footer. -->
+  <div class="cta-stage" aria-hidden="true">
+    <div class="dev dev-phone">
+      <div class="dev-screen">
+        <div class="ph-status"><b>9.41</b><span class="ph-island"></span><span class="ph-icons"><i></i><i></i><i></i></span></div>
+        <div class="ph-head"><b class="app-logo">QOLA</b><span class="app-bell"><em>3</em></span></div>
+        <div class="ph-title"><b>Penyebutan</b><span>Pantau percakapan untuk proyek <em>Brand Anda</em></span></div>
+        <div class="ph-card">
+          <div class="ph-src"><i style="--c: #7c3aed">P</i><span><b>Portal berita nasional</b><small>News · 1 jam lalu</small></span></div>
+          <b class="ph-headline">Brand Anda resmikan layanan pelanggan 24 jam di lima kota</b>
+          <div class="ph-stats"><span><small>Jangkauan</small>7.082</span><span><small>Skor</small>9/10</span><span><small>Tayang</small>09.12</span></div>
+          <div class="ph-tags"><em class="chip pos">Positif</em><em class="tag">brand anda</em><span class="ph-more">Lihat Detail</span></div>
+        </div>
+        <div class="ph-card">
+          <div class="ph-src"><i style="--c: #111827">X</i><span><b>@akunwarga</b><small>X · 3 jam lalu</small></span></div>
+          <b class="ph-headline">Sudah dua hari pesanan belum sampai, CS belum membalas</b>
+          <div class="ph-stats"><span><small>Jangkauan</small>1.240</span><span><small>Skor</small>3/10</span><span><small>Tayang</small>07.40</span></div>
+          <div class="ph-tags"><em class="chip neg">Negatif</em><em class="tag">pengiriman</em><span class="ph-more">Lihat Detail</span></div>
+        </div>
+        <div class="ph-ask"><span>Tanya AI Assistant</span><i></i></div>
+      </div>
+    </div>
+
+    <div class="dev dev-window">
+      <div class="win-chrome"><span class="win-dots"><i></i><i></i><i></i></span></div>
+      <div class="app-bar"><b class="app-logo">QOLA</b><nav><span>Dashboard</span><span>Penyebutan</span><span>Analisis</span><span>Kata Kunci</span><span class="on">Wawasan</span><span>Konten</span><span>Sumber</span><span>Laporan</span><span>AI Assistant</span></nav><span class="app-bell"><em>3</em></span><i class="app-me"></i></div>
+      <div class="app-filter">Filter Aktif: <span>Periode: Harian</span></div>
+      <div class="app-body">
+        <div class="app-rail"><span class="app-add">+</span><i>B</i><i>K</i><i class="on">BA</i></div>
+        <div class="win-main">
+          <div class="app-title"><b>Wawasan</b><small>Temukan korelasi data dan strategi melalui analisis ruang sentimen</small></div>
+          <div class="win-cols">
+            <div class="app-card">
+              <h4><i class="ic" style="--c: #ebe6fe"></i>Wawasan Utama</h4>
+              <div class="sent-box pos"><b>Sentimen Positif</b><p>Layanan pelanggan 24 jam banyak diapresiasi di media sosial.</p></div>
+              <div class="sent-box neu"><b>Sentimen Netral</b><p>Liputan peluncuran produk berfokus pada fitur dan harga.</p></div>
+              <div class="sent-box neg"><b>Sentimen Negatif</b><p>Keluhan keterlambatan pengiriman naik di Sumatera Utara.</p></div>
+            </div>
+            <div class="win-stack">
+              <div class="app-card">
+                <h4><i class="ic" style="--c: #e0f2fe"></i>Korelasi</h4>
+                <p class="cor"><b>Promo dan keluhan pengiriman</b>Keluhan naik bersamaan dengan promo akhir pekan.</p>
+                <p class="cor"><b>Respons CS dan sentimen</b>Balasan lebih cepat diikuti sentimen positif.</p>
+              </div>
+              <div class="app-card dark">
+                <h4><i class="ic"></i>Strategi</h4>
+                <p class="cor"><b>Unggah estimasi pengiriman</b>Per wilayah, di kanal resmi.</p>
+                <p class="cor"><b>Balas keluhan teratas</b>Sertakan nomor pelacakan.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dev dev-tablet">
+      <div class="dev-screen">
+        <div class="app-bar"><b class="app-logo">QOLA</b><nav><span>Dashboard</span><span>Penyebutan</span><span class="on">Analisis</span><span>Kata Kunci</span><span>Wawasan</span><span>Konten</span><span>Sumber</span><span>Laporan</span><span>AI Assistant</span></nav><span class="app-bell"><em>3</em></span><i class="app-me"></i></div>
+        <div class="app-body">
+          <div class="app-rail"><span class="app-add">+</span><i>B</i><i>K</i><i class="on">BA</i></div>
+          <div class="tab-main">
+            <div class="app-title"><b>Analisis</b><small>Pantau ringkasan performa dan wawasan data untuk proyek Anda</small></div>
+            <div class="tab-kpis">
+              <img src="assets/img/dashboard/kpi-penyebutan.png" alt="" width="388" height="260" loading="lazy">
+              <img src="assets/img/dashboard/kpi-jangkauan.png" alt="" width="386" height="260" loading="lazy">
+              <img src="assets/img/dashboard/kpi-interaksi.png" alt="" width="388" height="260" loading="lazy">
+              <img src="assets/img/dashboard/kpi-pr.png" alt="" width="386" height="260" loading="lazy">
+            </div>
+            <img class="tab-chart" src="assets/img/dashboard/chart.jpg" alt="" width="1764" height="784" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Same cards as "Sentimen Sosial Media" and "Sentimen Berita" on the Analisis page (example figures) -->
+    <div class="dev-stack">
+      <div class="dev dev-widget">
+        <p class="wid-label">Sentimen sosial media</p>
+        <ul class="wid-rows">
+          <li><b>1.2K</b><span class="pill pos">Positif</span></li>
+          <li><b>486</b><span class="pill neu">Netral</span></li>
+          <li><b>142</b><span class="pill neg">Negatif</span></li>
+        </ul>
+      </div>
+      <div class="dev dev-widget">
+        <p class="wid-label">Sentimen berita</p>
+        <ul class="wid-rows">
+          <li><b>1.1K</b><span class="pill pos">Positif</span></li>
+          <li><b>520</b><span class="pill neu">Netral</span></li>
+          <li><b>98</b><span class="pill neg">Negatif</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="logo"><img src="assets/brand/logo-qola.png" alt="Qola Media Intelligence" width="887" height="365"></a>
+        <p>Media monitoring dan analisis sentimen berbasis AI untuk Indonesia.</p>
+        <address>PT. Cita Kelola Kreasi<br>Wisma Korindo Lt. 6, Jl. Letjen M.T. Haryono Kav 62, Pancoran, Jakarta 12780<br><a href="mailto:info@qola.id">info@qola.id</a></address>
+      </div>
+      <div>
+        <h4>Produk</h4>
+        <ul><li><a href="produk/index.html">Semua produk</a></li><li><a href="#cara-kerja">Cara kerja</a></li><li><a href="#solusi">Solusi</a></li><li><a href="#harga">Harga</a></li><li><a href="#faq">FAQ</a></li></ul>
+      </div>
+      <div>
+        <h4>Perusahaan</h4>
+        <ul><li><a href="https://qola.id/contact">Hubungi kami</a></li><li><a href="berita/index.html">Berita</a></li><li><a href="https://www.linkedin.com/company/abhipraya" rel="noopener">LinkedIn</a></li></ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul><li><a href="https://qola.id/terms-services">Syarat dan ketentuan</a></li><li><a href="https://qola.id/privacy-policy">Kebijakan privasi</a></li></ul>
+      </div>
+    </div>
+    <p class="footer-bottom"><span>© 2026 Qola Media Intelligence. Hak cipta dilindungi.</span><span>PT. Cita Kelola Kreasi</span></p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  /* Nav, reveal on scroll, and mobile menu live in js/site.js */
+
+  /* Pricing: billing cycle */
+  var cycleBtns = document.querySelectorAll('.billing button');
+  var priced = document.querySelectorAll('[data-month]');
+  cycleBtns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var cycle = btn.dataset.cycle;
+      cycleBtns.forEach(function (b) { b.setAttribute('aria-pressed', b === btn); });
+      priced.forEach(function (node) { node.textContent = node.dataset[cycle]; });
+      if (window.QolaMotion) QolaMotion.prices(priced);
+    });
+  });
+
+  /* FAQ: one open at a time */
+  var qas = document.querySelectorAll('.qa');
+  qas.forEach(function (d) {
+    d.addEventListener('toggle', function () {
+      if (d.open) qas.forEach(function (o) { if (o !== d) o.open = false; });
+    });
+  });
+
+  /* Use cases: one active card, the laptop on the right shows its screen.
+     The active card's ring is a CSS animation (6s); when it ends, the next card takes over.
+     It only runs while the list is on screen, and never with reduced motion. */
+  var list = document.querySelector('[data-feats]');
+  var feats = [].slice.call(list.querySelectorAll('.feat'));
+  var screens = document.querySelectorAll('#uc-screens .scr');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+  function show(feat) {
+    feats.forEach(function (f) {
+      var on = f === feat;
+      f.classList.toggle('is-active', on);
+      f.setAttribute('aria-pressed', on);
+    });
+    screens.forEach(function (s) { s.classList.toggle('on', s.dataset.screen === feat.dataset.screen); });
+    /* Keep the active card in the middle of the list; scrolls the list only, never the page */
+    list.scrollTo({ top: feat.offsetTop - (list.clientHeight - feat.offsetHeight) / 2, behavior: reduce.matches ? 'auto' : 'smooth' });
+  }
+  feats.forEach(function (feat, i) {
+    feat.addEventListener('click', function () {
+      if (feat.classList.contains('is-active')) list.classList.toggle('is-paused');
+      else { list.classList.remove('is-paused'); show(feat); }
+    });
+    feat.querySelector('.feat-prog').addEventListener('animationend', function () {
+      show(feats[(i + 1) % feats.length]);
+    });
+  });
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (entries) {
+      list.classList.toggle('is-playing', entries[0].isIntersecting && !reduce.matches);
+    }, { threshold: 0.5 }).observe(list);
+  }
+})();
+</script>
+<!-- site.js last: reveal on scroll runs after the other scripts have rendered their content -->
+<script src="data/news.js"></script>
+<script src="js/news.js"></script>
+<script src="js/live.js"></script>
+<!-- Motion (motion.dev): vanilla JS build of Framer Motion. Pinned version with SRI; the page works without it. -->
+<script src="https://cdn.jsdelivr.net/npm/motion@13.4.6/dist/motion.js" integrity="sha384-r/e4U+dyOcWBX2/DXrTeaB1R9i9FhnrrxlcxehiAjy3Z1fa8134rTLsgfThF9tYQ" crossorigin="anonymous"></script>
+<script src="js/hero.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

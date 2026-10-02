@@ -85,13 +85,27 @@
   });
   nav.querySelectorAll('#nav-links a').forEach(function (a) { a.addEventListener('click', closeMenu); });
 
+  /* Produk stack: a card taller than the screen sticks only once its bottom edge is in view, so nothing in it is
+     covered before it has been read (cards that fit stick at the very top) */
+  var pcards = document.querySelectorAll('.pcard');
+  function placeCards() {
+    pcards.forEach(function (c) {
+      c.style.top = '';
+      if (getComputedStyle(c).position !== 'sticky') return;
+      c.style.top = Math.min(0, window.innerHeight - c.offsetHeight) + 'px';
+    });
+  }
+  if (pcards.length) { placeCards(); window.addEventListener('resize', placeCards); window.addEventListener('load', placeCards); }
+
   /* Reveal on scroll */
   var reveals = document.querySelectorAll('.reveal');
   function show(node) {
     node.classList.add('in');
     node.querySelectorAll('[data-w]').forEach(function (s) { s.style.width = s.dataset.w + '%'; });
   }
-  if ('IntersectionObserver' in window && !reduced) {
+  if (window.Motion && !reduced) {
+    // js/animations.js reveals these with Motion
+  } else if ('IntersectionObserver' in window && !reduced) {
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (!entry.isIntersecting) return;
