@@ -1,71 +1,50 @@
-# Tomorro — Style Reference
-> lush greenhouse at midnight — Electric Sprout neon pierces the deep forest canvas and bone-white beds below. The brand lives in that contrast: the dark is the soil, the light is the greenhouse bench, the green is the growth.
+# Bevel — Style Reference
+> Morning metrics in cloudlight. Build screens as a bright white health journal punctuated by a softly glowing wearable dashboard.
 
-**Theme:** mixed
+**Theme:** light
 
 Source measurements are normalized; roles and recommendations are interpreted. Font summary lists are independent, not paired by position. HTML examples are reconstructions, not source components.
 
-Tomorro is a contract-management platform that renders in a neo-botanical dark-and-light system: deep forest-canvas sections alternate with warm bone-white panels, both fed by the same Moss-Shadow text and punctuated by an Electric Sprout green. The visual language is quiet, mature, editorial — Ozik display type at ultra-tight 0.86 line-height anchors the hero, Aeonik carries every UI surface, and Instrument Serif drops in sparingly as accent italic-adjacent voice inside badges. Components are mostly pill-shaped (28-40px radius) rather than squared, the floating nav bar looks like a pressed seed, and the green CTA is treated as botanical accent paint, not a brand wallpaper. Pages should read as 70% typography on flat surfaces, 20% product mockups floating at slight angles, 10% abstract green orb atmosphere.
+Bevel frames health data as a sunlit consumer device experience: a white editorial canvas, near-black SF Pro headlines, mist-blue bento surfaces, and realistic iPhone/Apple Watch product imagery. Oversized 600-weight headings use tight negative tracking and compact line-height, while supporting copy stays soft gray and generously spaced. Color is restrained in the site shell; pale sky gradients and small multicolor health-data rings are reserved for product visuals and feature atmosphere rather than universal controls.
 
 ## Tokens — Colors
 
 | Name | Value | Token | Role |
 |------|-------|-------|------|
-| Forest Depths | `#122314` | `--color-forest-depths` | Dark elevated surface for cards, headers, and contained panels. Do not promote it to the primary CTA color |
-| Moss Shadow | `#273f2b` | `--color-moss-shadow` | Gray action color for filled buttons, selected navigation states, and focused conversion moments. |
-| Lichen Sage | `#7e8371` | `--color-lichen-sage` | Secondary muted text, link underline on dark, and badge border color — sits between Moss Shadow and Pure White as the off-tone voice |
-| Pale Fern | `#b7bda5` | `--color-pale-fern` | Medium-contrast borders, control outlines, and structural separators. |
-| Electric Sprout | `#68ef3f` | `--color-electric-sprout` | Green action color for filled buttons, selected navigation states, and focused conversion moments. |
-| Deep Verdant | `#26a200` | `--color-deep-verdant` | Secondary accent for link borders, icon strokes, and hover-active states — a quieter green that supports Sprout without competing |
-| Sprout Wash | `#e7f9dd` | `--color-sprout-wash` | Light green badge background and success-tint surface — the diluted form of Electric Sprout for soft status chips |
-| Mist Green | `#d9deca` | `--color-mist-green` | Light sage link border and chip outline on bone surfaces — a low-contrast divider that reads as green without demanding attention |
-| Onyx Olive | `#30322a` | `--color-onyx-olive` | Primary achromatic dark — body copy on white, borders on light cards, and the dominant hairline color across the whole system |
-| Pure White | `#ffffff` | `--color-pure-white` | Light-section page background, text on dark surfaces, and inverted badge fills — the greenhouse bench |
-| Bone White | `#f2f5eb` | `--color-bone-white` | Card surface on light sections — warm off-white that prevents the page from reading sterile, never pure #fff when elevated |
-| Soft Mist | `#dcdfe3` | `--color-soft-mist` | Cool-tinted heading rule and quiet secondary border — the only neutral that isn't green-tinted |
-| Cool Stone | `#d6d6d6` | `--color-cool-stone` | Muted UI surface for disabled controls, low-emphasis panels, and placeholder blocks. |
-| Carbon | `#222222` | `--color-carbon` | Link text and border on light surfaces — darker than Onyx Olive, used only where the link must read as a typographic accent rather than a button |
+| Paper White | `#ffffff` | `--color-paper-white` | Page backgrounds, navigation surfaces, footer backgrounds, and open whitespace |
+| Charcoal | `#1f2025` | `--color-charcoal` | Filled download controls, dark surface blocks, logos, and monochrome iconography |
+| Ink | `#222326` | `--color-ink` | Display headings, section headings, feature titles, and primary text |
+| Cloud Card | `#ebf0f8` | `--color-cloud-card` | Feature-card surfaces, light icon fills, and text inside Charcoal download controls |
+| Body Gray | `#747679` | `--color-body-gray` | Body copy, muted navigation links, helper text, and secondary labels |
+| Signal Gold | `#ffca00` | `--color-signal-gold` | Rating stars and small positive health-data indicators |
+| Coral Signal | `#ffab94` | `--color-coral-signal` | Warm metric accents and lower-edge washes in feature visualizations |
+| Recovery Green | `#31ce01` | `--color-recovery-green` | Recovery rings and green-tinted metric visualizations |
+| Metric Blue | `#415eee` | `--color-metric-blue` | Circular metric indicators and blue gradient treatments in product visuals |
+| Sleep Lilac | `#b9a6ff` | `--color-sleep-lilac` | Sleep-oriented metric rings and soft violet visual accents |
+| Hero Sky | `linear-gradient(#d2e5ff, #fff9ee)` | `--color-hero-sky` | Top hero atmosphere behind the device composition, fading from cool daylight into warm paper |
 
 ## Tokens — Typography
 
-### Ozik — Hero and section display only — used for two or three words maximum per line. The ultra-tight 0.86 line-height stacks letterforms like glasshouse beams; the heavy weight on a near-black canvas is the system's signature. · `--font-ozik`
-- **Substitute:** Boldonse, Migra, or PP Editorial New at 700/800 with -0.01em tracking
-- **Weights:** 700
-- **Sizes:** 56px, 80px
-- **Line height:** 0.86 (56px), 0.90 (80px)
-- **Letter spacing:** -0.0140em, -0.0100em
-- **Role:** Hero and section display only — used for two or three words maximum per line. The ultra-tight 0.86 line-height stacks letterforms like glasshouse beams; the heavy weight on a near-black canvas is the system's signature.
-
-### Aeonik — Workhorse for every UI surface — nav, body, buttons, cards, inputs, headings up to 40px. 400 for body and labels, 500 for sub-labels, 600 for sub-headings, 700 for section titles and button labels. The negative letter-spacing tightens as size grows, giving headlines a compressed, technical feel without becoming a display face. · `--font-aeonik`
-- **Substitute:** Inter, Söhne, or Geist at matched weights
-- **Weights:** 400, 500, 600, 700
-- **Sizes:** 12px, 13px, 14px, 16px, 18px, 20px, 24px, 32px, 40px
-- **Line height:** 1.20 (32-40px), 1.33 (24px), 1.43-1.50 (body), 1.67-1.71 (small UI)
-- **Letter spacing:** -0.0310em, -0.0210em, -0.0150em, -0.0120em, -0.0030em, -0.0010em, 0.0130em, 0.1430em
-- **Role:** Workhorse for every UI surface — nav, body, buttons, cards, inputs, headings up to 40px. 400 for body and labels, 500 for sub-labels, 600 for sub-headings, 700 for section titles and button labels. The negative letter-spacing tightens as size grows, giving headlines a compressed, technical feel without becoming a display face.
-
-### Instrument Serif — Editorial accent only — drops into badges, small pull quotes, and the occasional 32px sub-heading to break Aeonik's geometric monotony. The serif's organic stroke and slight +0.063em tracking at small sizes are the only warmth this system permits. · `--font-instrument-serif`
-- **Substitute:** Source Serif 4, GT Sectra, or Newsreader at 400 italic-leaning
-- **Weights:** 400
-- **Sizes:** 16px, 18px, 32px
-- **Line height:** 1.25-1.56
-- **Letter spacing:** -0.0500em, 0.0280em, 0.0630em
-- **Role:** Editorial accent only — drops into badges, small pull quotes, and the occasional 32px sub-heading to break Aeonik's geometric monotony. The serif's organic stroke and slight +0.063em tracking at small sizes are the only warmth this system permits.
+### -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", sans-serif — SF Pro system typography carries every interface layer. Use 600-weight display text at 40px–80px with -0.03em tracking: its compact, almost lockup-like lines make wellness claims feel like product labels rather than editorial copy. Use 400-weight body text at 18px–24px and 500-weight navigation/actions at 16px–18px. · `--font-apple-system-blinkmacsystemfont-inter-segoe-ui-sans-serif`
+- **Substitute:** Inter
+- **Weights:** 400, 500, 600
+- **Sizes:** 12px, 16px, 18px, 24px, 40px, 64px, 80px
+- **Line height:** 0.90, 1.00, 1.10, 1.30, 1.40
+- **Letter spacing:** -2.4px at 80px, -1.92px at 64px, -1.2px at 40px, -0.24px at 24px, +0.16px at 18px navigation, and normal at 16px body controls
+- **Role:** SF Pro system typography carries every interface layer. Use 600-weight display text at 40px–80px with -0.03em tracking: its compact, almost lockup-like lines make wellness claims feel like product labels rather than editorial copy. Use 400-weight body text at 18px–24px and 500-weight navigation/actions at 16px–18px.
 
 ### Type Scale
 
 | Role | Family | Weight | Size | Line Height | Letter Spacing | Token |
 |------|--------|--------|------|-------------|----------------|-------|
-| caption | — | — | 12px | 1.5 | -0.036px | `--text-caption` |
-| body | — | — | 14px | 1.5 | -0.042px | `--text-body` |
-| body-md | — | — | 16px | 1.5 | -0.496px | `--text-body-md` |
-| subheading | — | — | 18px | 1.5 | -0.378px | `--text-subheading` |
-| heading-sm | — | — | 20px | 1.43 | -0.3px | `--text-heading-sm` |
-| heading | — | — | 24px | 1.33 | -0.36px | `--text-heading` |
-| heading-lg | — | — | 32px | 1.2 | -0.672px | `--text-heading-lg` |
-| display | — | — | 40px | 1.2 | -1.24px | `--text-display` |
-| display-xl | — | — | 56px | 0.86 | -0.784px | `--text-display-xl` |
-| display-2xl | — | — | 80px | 0.9 | -0.8px | `--text-display-2xl` |
+| caption | -apple-system | 400 | 12px | 1.1 | 0px | `--text-caption` |
+| nav | -apple-system | 500 | 16px | 1.4 | 0px | `--text-nav` |
+| brand-nav | -apple-system | 500 | 18px | 1.4 | 0.162px | `--text-brand-nav` |
+| body | -apple-system | 400 | 24px | 1.3 | 0px | `--text-body` |
+| section-label | -apple-system | 600 | 24px | 0.9 | -0.24px | `--text-section-label` |
+| card-heading | -apple-system | 600 | 40px | 1 | -1.2px | `--text-card-heading` |
+| display | -apple-system | 600 | 64px | 1 | -1.92px | `--text-display` |
+| hero-display | -apple-system | 600 | 80px | 1 | -2.4px | `--text-hero-display` |
 
 ## Tokens — Spacing & Shapes
 
@@ -83,179 +62,160 @@ Tomorro is a contract-management platform that renders in a neo-botanical dark-a
 | 32 | 32px | `--spacing-32` |
 | 40 | 40px | `--spacing-40` |
 | 48 | 48px | `--spacing-48` |
-| 56 | 56px | `--spacing-56` |
-| 64 | 64px | `--spacing-64` |
 | 80 | 80px | `--spacing-80` |
-| 128 | 128px | `--spacing-128` |
-| 168 | 168px | `--spacing-168` |
-| 240 | 240px | `--spacing-240` |
+| 96 | 96px | `--spacing-96` |
+| 160 | 160px | `--spacing-160` |
 
 ### Border Radius
 
 | Element | Value |
 |---------|-------|
-| nav | 28px |
-| cards | 16-24px |
-| badges | 20-40px |
-| inputs | 24px |
-| buttons | 8px (compact) or 28px (pill) |
-| heroOrb | 9999px |
+| cards | 24-32px |
+| pills | 9999px |
+| images | 16-24px |
+| buttons | 128px |
+| navigation | 32px |
+
+### Shadows
+
+| Name | Value | Token |
+|------|-------|-------|
+| md | `rgba(0, 0, 0, 0.25) 0px 0px 16px -8px` | `--shadow-md` |
+| subtle | `rgb(255, 255, 255) 0px 1px 0px 0px inset, rgba(255, 255, ...` | `--shadow-subtle` |
+| lg | `rgb(255, 255, 255) 0px 0px 24px 0px inset` | `--shadow-lg` |
+| md-2 | `rgba(0, 0, 0, 0.15) 0px 2px 16px 0px` | `--shadow-md-2` |
+| subtle-2 | `rgba(255, 255, 255, 0.36) 0px 1px 0px 0px inset` | `--shadow-subtle-2` |
 
 ### Layout
 
-- **Page max-width:** 1200px
-- **Section gap:** 80-120px
-- **Card padding:** 24-40px
-- **Element gap:** 8-16px
+- **Section gap:** 80px
+- **Card padding:** 32px
+- **Element gap:** 16px
 
 ## Components
 
-### Floating Pill Navigation
-**Role:** Primary site navigation
+### Floating Capsule Navigation
+**Role:** Public-site header
 
-Sits above the page content with 24-32px top margin, full-width up to 1200px container, Onyx Olive (#30322a) at ~90% opacity background, 28px border-radius. Contains the 'tomorro' wordmark left, a small 'Hiring' Electric Sprout (#68ef3f) tag, dropdown buttons with 8px radius in #273f2b, language switcher, and the right-side 'Sign in' outlined button plus Electric Sprout 'Schedule a demo' pill CTA.
+Use a Paper White (#ffffff) rounded bar with a 32px radius, a 12-20px backdrop blur, and 16px internal control spacing. Brand text is Ink at 18px/25.2px, weight 500, +0.16px tracking; secondary links are Body Gray at 16px/22.4px, weight 500.
 
-### Hiring Tag Pill
-**Role:** Status badge in nav
+### Charcoal Download Pill
+**Role:** Public conversion control
 
-8px Aeonik 500, Electric Sprout (#68ef3f) fill, Onyx Olive (#30322a) text, 40px border-radius, 4px 12px padding. Sits inline with the wordmark as a permanent recruitment beacon.
+Fill with Charcoal (#1f2025), set Cloud Card (#ebf0f8) label and Apple icon color, use 128px radius, 8px vertical and 16px horizontal padding, and 16px/22.4px weight-500 text. Keep the control short and capsule-shaped rather than promoting it into a rectangular button.
 
-### Nav Dropdown Trigger
-**Role:** Top-level menu button
-
-Aeonik 500 14px, Lichen Sage (#7e8371) text, 7px 12px padding, 8px border-radius, transparent background, 6px caret icon. Hovering shifts text to Pure White (#ffffff) over the Onyx Olive nav bar.
-
-### Primary CTA — Filled Sprout
-**Role:** Highest-emphasis button
-
-Electric Sprout (#68ef3f) background, Onyx Olive (#30322a) text, Aeonik 500 14-16px, 8px 20px padding, 8px border-radius (compact) or 28px (pill). One per viewport on dark sections; never more than two adjacent.
-
-### Secondary CTA — Ghost with Play Icon
-**Role:** Lower-emphasis video/demo trigger
-
-Transparent background, Pure White (#ffffff) 1px border, Pure White text, Aeonik 500 14-16px, 8px 20px padding, 8px or 28px border-radius. Triangular play icon precedes the label at 12px size.
-
-### Sign In Outlined Button
-**Role:** Authenticated-user entry
-
-Pure White (#ffffff) 1px border, Pure White text, 6px 16px padding, 28px border-radius pill. Sits inside the nav bar to the left of the primary CTA.
-
-### Event Announcement Pill
-**Role:** Hero announcement chip
-
-Lichen Sage (#7e8371) 1px border, 4px 16px padding, 9999px radius. Inner content is Aeonik 400 14px Pure White with 'brand-new event on June 4' highlighted in Electric Sprout. Small right-pointing chevron closes the pill.
-
-### Display Headline with Accent Word
-**Role:** Hero and section h1
-
-Ozik 700 at 56-80px, line-height 0.86-0.90, Pure White on dark / Onyx Olive on light, letter-spacing -0.01em to -0.014em. One word (typically the brand promise's noun) switches to Electric Sprout for visual punctuation — the green word is never more than 3 characters in the hero.
-
-### Body Paragraph with Green Inline Link
-**Role:** Supporting hero and section copy
-
-Aeonik 400 18px, Pale Fern (#b7bda5) or Pure White text on dark at 1.5 line-height, max-width 560-640px centered. Key noun phrases like 'Artificial Intelligence' switch to Electric Sprout without underline.
-
-### Trust Logo Strip
-**Role:** Social proof under hero
-
-Single horizontal row of customer logos rendered in Pure White at ~50% opacity on the Forest Depths canvas. 48px logo height, even 32px gaps, centered. Aeonik 400 14px Pale Fern caption above ('They put their trust in us, as do more than 100,000 users').
-
-### Floating Product Mockup Card
+### Cloudlight Device Hero
 **Role:** Hero product showcase
 
-White interface screenshot (contract analysis chat with risk indicators) inside a 16-24px radius card, 0 24px 60px rgba(0,0,0,0.35) shadow, tilted -8 to +8 degrees in a stack of 2-3. Each card is 600-800px wide with the front card sharpest and rear cards desaturated or scaled down.
+Use the Hero Sky gradient from #d2e5ff to #fff9ee as a tall rounded visual field, then center layered iPhone and Apple Watch renders beneath an Ink headline. Keep the device artwork raw and dimensional; the hero background, not a card border, contains the composition.
 
-### Decorative Sprout Orb
-**Role:** Hero and section atmosphere
+### Hero Rating Strip
+**Role:** App-store proof
 
-Large 400-600px circle, linear gradient from #000000 to #273f2b (or sage-toned variant) with a grainy/noise texture overlay, partially cropped by the viewport. Sits at 30-50% opacity behind the hero copy.
+Place compact Signal Gold (#ffca00) stars beside small Body Gray metadata below the Charcoal download pill. Use 12px text for metadata and keep the strip visually subordinate to the hero callout.
 
-### Customer Logo Grid Card
-**Role:** Light-section social proof
+### Wearable Partner Row
+**Role:** Compatibility proof
 
-Onyx Olive (#30322a) or Lichen Sage (#7e8371) brand wordmarks at 40-60% opacity on Pure White, arranged in 4-6 columns with 32-48px row gap. No card chrome — the grid itself is the surface, sometimes a centered headline + green pill CTA break the grid in the middle row.
+Center an Ink 24px/21.6px, weight-600 heading with -0.24px tracking above a single horizontal row of monochrome partner wordmarks. Keep wordmarks Charcoal (#1f2025) with generous 24px gaps and no enclosing cards.
 
-### Input Field
-**Role:** Form input
+### Recognition Laurel Pair
+**Role:** Editorial social proof
 
-Transparent or Forest Depths background on dark, 1px Moss Shadow or Electric Sprout border, 24px border-radius, 12px 16px padding, Aeonik 400 14-16px text. Focus state swaps border to Electric Sprout (#68ef3f).
+Render two small neutral-gray laurel marks and award labels centered above the next display headline. Use Body Gray (#747679) for the labels and preserve a 16px gap between the two awards.
 
-### Status Badge (Sprout Wash)
-**Role:** Inline success or category tag
+### Community Story Carousel Card
+**Role:** Member social-proof media
 
-Sprout Wash (#e7f9dd) background, Moss Shadow (#273f2b) text, Aeonik 500 12-13px, 4px 12px padding, 20-40px border-radius depending on width. Frequently appears on light cards and inside product UI.
+Use portrait-format photographic and app-capture tiles with 16px rounded corners. Apply the image lift shadow rgba(0, 0, 0, 0.25) 0px 0px 16px -8px and allow outer carousel tiles to fade into the page edge.
+
+### Cloud Feature Card
+**Role:** Health metric explanation
+
+Use a Cloud Card (#ebf0f8) surface with a 24px radius and 32px padding. Set the feature name in Ink at 40px/40px, weight 600, -1.2px tracking; body copy uses Body Gray at 24px/31.2px, weight 400.
+
+### Inset Metric Visualization
+**Role:** Feature-card product preview
+
+Layer compact health charts, circular scores, and metric chips inside rounded 16px-24px imagery. Use Recovery Green (#31ce01), Metric Blue (#415eee), Sleep Lilac (#b9a6ff), and Coral Signal (#ffab94) only as data-category accents against pale surfaces.
+
+### Elevated QR Download Card
+**Role:** Persistent mobile-download prompt
+
+Use a compact Charcoal (#1f2025) card with Cloud Card (#ebf0f8) text and a high-contrast QR code. Round the card to 16px and apply rgba(0, 0, 0, 0.15) 0px 2px 16px 0px elevation.
+
+### Footer Link Group
+**Role:** Site footer navigation
+
+Group Ink (#222326) 18px/25.2px weight-500 links under compact headings on Paper White (#ffffff). Use 16px vertical link spacing and preserve the generous 160px section padding used around footer content.
 
 ## Do's and Don'ts
 
 ### Do
-- Use #68ef3f Electric Sprout as the sole filled action color — every primary CTA, every 'AI' accent word, every active state, every focus ring runs through this one green.
-- Set display headlines with Ozik 700 at line-height 0.86-0.90 and letter-spacing -0.01em to -0.014em — the compressed stacking is the signature, not the type size alone.
-- Alternate page sections between #122314 Forest Depths and #ffffff Pure White — never blend them with a gradient; the contrast band is the rhythm.
-- Use 28px border-radius for navigation, primary pills, and high-trust CTAs; reserve 8px for compact utility buttons and 16-24px for cards.
-- Render all body copy in Aeonik 400, all button labels and tags in Aeonik 500-600 — never promote body weight to 700 for emphasis; instead switch one word to Electric Sprout.
-- Apply the dark-canvas hairline border (#30322a) at 1px on every dark-section card, button, and input — the dark surface needs a visible frame to read as a component.
-- Tilt floating product mockup cards 4-8 degrees and stack 2-3 deep with cascading shadows — flat product screenshots on a dark canvas disappear.
+- Use Paper White (#ffffff) as the default canvas and Cloud Card (#ebf0f8) for large feature surfaces.
+- Set display headings in Ink (#222326), weight 600, with -0.03em tracking at the 40px, 64px, and 80px steps.
+- Use 80px vertical section gaps and 32px padding inside Cloud Feature Cards.
+- Use 128px radius, 8px 16px padding, Charcoal (#1f2025) fill, and Cloud Card (#ebf0f8) text for public download buttons.
+- Use 24px or 32px card radii and 16px-24px radii for product imagery.
+- Keep Body Gray (#747679) supporting copy at 24px/31.2px, weight 400.
+- Restrict Recovery Green (#31ce01), Metric Blue (#415eee), Sleep Lilac (#b9a6ff), and Coral Signal (#ffab94) to health-data visuals and soft washes.
 
 ### Don't
-- Don't introduce a second accent color — there is no secondary brand color. If Sprout is unavailable for an action, fall back to outlined buttons in Pure White or Onyx Olive, never a different hue.
-- Don't use #273f2b Moss Shadow as a background — it is a text and border color. Surfaces are either Forest Depths (dark), Pure White (light), or Bone White (elevated card).
-- Don't apply drop-shadows to flat cards, badges, or buttons — elevation is reserved for the floating nav and tilted product mockups.
-- Don't set body text at weight 500 or higher; the system relies on Electric Sprout word-switching and size jumps, not bold weight, for hierarchy.
-- Don't break the 8px spacing rhythm with 5px or 7px values — the only exceptions are 4px (badge vertical padding) and 3px (icon nudges), every other dimension is a multiple of 8.
-- Don't use Instrument Serif for body copy or long headings — it appears at 16-32px only, typically inside badges, captions, or as a single accent heading line.
-- Don't put gradient text on dark — gradient is reserved for the atmospheric orb; headlines and body copy are flat fills of Pure White, Onyx Olive, or Electric Sprout.
+- Do not use saturated metric colors as universal page backgrounds or filled public conversion buttons.
+- Do not set large headings above 600 weight or remove their -0.03em tracking.
+- Do not use square buttons; public download controls require a 128px radius.
+- Do not add visible borders to Cloud Feature Cards; use #ebf0f8 surfaces with no border and no shadow.
+- Do not replace the 80px section rhythm with dense 24px-40px stacked sections.
+- Do not use heavy drop shadows on cards; reserve rgba(0, 0, 0, 0.25) 0px 0px 16px -8px for floating imagery.
+- Do not turn the supporting Body Gray (#747679) copy into black or weight 600 text.
 
 ## Surfaces
 
 | Level | Name | Value | Purpose |
 |-------|------|-------|---------|
-| 0 | Forest Depths canvas | `#122314` | Dark hero and footer stage |
-| 1 | Pure White page | `#ffffff` | Light content bands, logo grid sections |
-| 2 | Bone White card | `#f2f5eb` | Elevated card on light bands |
-| 3 | Sprout Wash chip | `#e7f9dd` | Soft green status surface |
-| 4 | Electric Sprout accent | `#68ef3f` | Action button fill, active highlight |
+| 0 | Paper White | `#ffffff` | Primary page canvas, open sections, navigation, and footer. |
+| 1 | Cloud Card | `#ebf0f8` | Feature-card backgrounds and pale inset surfaces. |
+| 2 | Charcoal | `#1f2025` | Download pills, QR prompt surfaces, and dark monochrome blocks. |
 
 ## Elevation
 
-- **Floating product mockup card:** `0 24px 60px rgba(0,0,0,0.35), 0 4px 12px rgba(0,0,0,0.2)`
-- **Pill navigation bar:** `0 8px 32px rgba(0,0,0,0.25)`
+- **Community Story Carousel Card:** `rgba(0, 0, 0, 0.25) 0px 0px 16px -8px`
+- **Elevated QR Download Card:** `rgba(0, 0, 0, 0.15) 0px 2px 16px 0px`
 
 ## Imagery
 
-Visuals lean on atmosphere, not photography. The hero features a large abstract green-to-black gradient orb with a grainy noise texture, partially cropped by the viewport — it reads as a blurred botanical mass rather than a defined object. Product showcases are floating UI mockup cards (chat interfaces, contract editors) tilted 4-8 degrees and stacked 2-3 deep, always with crisp white card surfaces against the dark canvas. Customer logos appear as desaturated wordmarks (40-60% opacity) in a wide grid, never as photographs. Iconography is minimal: thin line icons in Moss Shadow or Electric Sprout at 1.5-2px stroke, used sparingly for play buttons, dropdown carets, and decorative ticks. No lifestyle photography, no stock imagery, no portraits — the brand speaks through type and product UI alone.
+Product-render imagery leads the page: a realistic iPhone dashboard and Apple Watch overlap within the hero, with soft reflections and raw device edges rather than flat illustrations. Community proof appears as a horizontal sequence of portrait social posts, candid fitness images, food captures, and app screenshots, each rounded at 16px and softly lifted from the white canvas. Product visuals use small multicolor data rings and metric chips against mostly pale UI surfaces; the site shell itself remains almost entirely monochrome. Partner logos are black wordmarks, while award laurels are faint gray editorial marks. The composition is text-dominant between media moments, with imagery used as product evidence and member proof rather than decoration.
 
 ## Layout
 
-The page model is a centered max-width 1200px container with full-bleed background sections. The hero is full-viewport height with a Forest Depths canvas, centered headline + subhead + dual CTA, and the floating pill nav hovering above with 24-32px of top breathing room. Below the hero, content alternates between dark and light bands at 80-120px vertical gaps: dark feature bands showcase floating product mockup cards in the right two-thirds while copy sits left-aligned in the left third, light bands invert this with a centered headline, a single green CTA, and a 4-6 column logo grid filling the rest of the section. Section dividers are implicit (background color change) rather than explicit lines. The trust strip sits directly under the hero CTA as a single row of muted logos. Navigation is a single pill bar — no sidebar, no mega-menu. Density stays comfortable throughout, with card padding at 24-40px and consistent 8-16px element gaps.
-
-## Display & Editorial Typography
-
-The system's personality lives in its three-font cast. Ozik 700 owns the hero at 56-80px with line-height 0.86-0.90 — this near-1.0 line-height is non-negotiable; it stacks the heavy letterforms like greenhouse beams and makes the green accent word (usually 1-3 characters) pop. Aeonik 400-700 carries everything below 40px, with the negative letter-spacing growing as size grows (-0.003em at 12px, -0.031em at 16px, -0.021em at 32px, -0.031em at 40px) — this compression gives headlines a technical, almost data-display feel without invoking a separate display face. Instrument Serif 400 appears sparingly at 16-32px inside badges and as the occasional italic-leaning sub-heading, providing the only warm, organic stroke in an otherwise geometric system. Never use Ozik for UI chrome, never use Instrument Serif for body, and never promote Aeonik above 40px — each face has a strict domain.
+The page is a vertically scrolling, center-aligned public landing page on Paper White, opening with a large rounded full-width hero field rather than a boxed content panel. A floating capsule navigation bar sits over the hero and remains visually available as the page moves through product imagery. The first screen centers a large two-line headline, muted supporting copy, a pill download control, compact rating proof, and overlapping phone-and-watch renders over a pale sky-to-warm gradient. Subsequent sections use broad white bands with centered compatibility logos, award proof, and large centered display statements; a horizontal community-media strip breaks the text rhythm with edge-faded portrait tiles. The lower content shifts to centered introduction copy followed by a three-column row of pale-blue feature cards, creating spacious 80px section intervals rather than dense dashboard stacking.
 
 ## Agent Prompt Guide
 
-QUICK COLOR REFERENCE
-- Primary text on light: #30322a Onyx Olive
-- Primary text on dark: #ffffff Pure White
-- Page background (dark sections): #122314 Forest Depths
-- Page background (light sections): #ffffff Pure White
-- Card surface (light): #f2f5eb Bone White
-- Accent / link highlight: #68ef3f Electric Sprout
-- primary action: #68ef3f (filled action)
+Quick Color Reference:
+- Paper White: #ffffff — Page backgrounds, navigation surfaces, footer backgrounds, and open whitespace
+- Charcoal: #1f2025 — Filled download controls, dark surface blocks, logos, and monochrome iconography
+- Ink: #222326 — Display headings, section headings, feature titles, and primary text
+- Cloud Card: #ebf0f8 — Feature-card surfaces, light icon fills, and text inside Charcoal download controls
+- Body Gray: #747679 — Body copy, muted navigation links, helper text, and secondary labels
+- Signal Gold: #ffca00 — Rating stars and small positive health-data indicators
+- Coral Signal: #ffab94 — Warm metric accents and lower-edge washes in feature visualizations
+- Recovery Green: #31ce01 — Recovery rings and green-tinted metric visualizations
+- Metric Blue: #415eee — Circular metric indicators and blue gradient treatments in product visuals
+- Sleep Lilac: #b9a6ff — Sleep-oriented metric rings and soft violet visual accents
+- Hero Sky: linear-gradient(#d2e5ff, #fff9ee) — Top hero atmosphere behind the device composition, fading from cool daylight into warm paper
 
-EXAMPLE COMPONENT PROMPTS
-1. Create a Primary Action Button: #68ef3f background, #222222 text, 9999px radius, compact pill padding. Use this filled treatment for the main CTA.
-2. Floating product mockup card — white 700x520px interface screenshot on a 16px border-radius card, tilted -6deg, with box-shadow 0 24px 60px rgba(0,0,0,0.35). Inside: 24px header, 8px Moss Shadow (#273f2b) 1px border for a chat bubble outline, status badges at 20px radius with #e7f9dd fill and #273f2b text. Place at 60% width on the right side of a #122314 section.
-4. Event announcement pill — inline at the top of a hero. 1px #7e8371 border, 9999px radius, 4px 16px padding. Body text in Aeonik 400 14px #ffffff, with the phrase 'brand-new event on June 4' set in #68ef3f Electric Sprout, followed by a small right-pointing chevron in #7e8371.
-5. Status badge inside a card — #e7f9dd Sprout Wash background, #273f2b Moss Shadow text, Aeonik 500 12px, 4px 12px padding, 20px border-radius. Sits at the top-right corner of a #f2f5eb Bone White card with 24px padding and a 1px #30322a hairline border.
+Create a centered health-app hero on the Hero Sky gradient, with an Ink (#222326) 80px/80px, weight-600 headline tracked at -2.4px; place Body Gray (#747679) 24px/31.2px copy, a Charcoal Download Pill, then overlapping iPhone and Apple Watch renders.
+Create a compatibility section on Paper White (#ffffff) with an Ink (#222326) 24px/21.6px, weight-600 heading tracked at -0.24px and a centered monochrome partner-wordmark row with 24px gaps.
+Create three Cloud Feature Cards using #ebf0f8, 24px radius, and 32px padding; set each title in Ink at 40px/40px, weight 600, -1.2px tracking, and its supporting copy in Body Gray at 24px/31.2px.
+Create a community-story carousel of rounded 16px portrait media tiles, using photographic member posts and app captures with rgba(0, 0, 0, 0.25) 0px 0px 16px -8px shadows and faded outer edges.
 
 ## Similar Brands
 
-- **Linear** — Same dark canvas + single neon green accent approach, same pill-shaped primary CTA, and the same restraint — typography does the work, color only punctuates action
-- **Pitch** — Shares the editorial-meets-product sensibility: mixed dark and light bands, compressed display type, and a single vivid accent (Pitch uses purple, Tomorro uses green) with generous whitespace
-- **Mercury** — Comparable trust-strip under hero with desaturated customer logos, max-width centered layout, and a 'one strong color, lots of quiet type' brand posture
-- **Arc** — Same neo-botanical palette instinct (Arc leans deep green/charcoal, Tomorro commits fully to it) and the same floating pill nav anchored above a colored hero canvas
-- **Notion** — Matches the 'flat surfaces, thin borders, no decorative shadows' philosophy and the same comfort with alternating between light content and dark hero blocks
+- **Gentler Streak** — Shares the Apple-platform health framing, large SF-style type, pale surfaces, and wearable-data visualization.
+- **Apple Fitness+** — Shares prominent Apple Watch product imagery, dark capsule controls, and restrained metric-color accents.
+- **Oura** — Shares a bright wellness canvas with product-led health insights and compact circular score visualizations.
+- **WHOOP** — Shares wearables-centered performance tracking, recovery-focused metric categories, and member-proof content.
 
 ## Quick Start
 
@@ -264,63 +224,52 @@ EXAMPLE COMPONENT PROMPTS
 ```css
 :root {
   /* Colors */
-  --color-forest-depths: #122314;
-  --color-moss-shadow: #273f2b;
-  --color-lichen-sage: #7e8371;
-  --color-pale-fern: #b7bda5;
-  --color-electric-sprout: #68ef3f;
-  --color-deep-verdant: #26a200;
-  --color-sprout-wash: #e7f9dd;
-  --color-mist-green: #d9deca;
-  --color-onyx-olive: #30322a;
-  --color-pure-white: #ffffff;
-  --color-bone-white: #f2f5eb;
-  --color-soft-mist: #dcdfe3;
-  --color-cool-stone: #d6d6d6;
-  --color-carbon: #222222;
+  --color-paper-white: #ffffff;
+  --color-charcoal: #1f2025;
+  --color-ink: #222326;
+  --color-cloud-card: #ebf0f8;
+  --color-body-gray: #747679;
+  --color-signal-gold: #ffca00;
+  --color-coral-signal: #ffab94;
+  --color-recovery-green: #31ce01;
+  --color-metric-blue: #415eee;
+  --color-sleep-lilac: #b9a6ff;
+  --color-hero-sky: #d2e5ff;
+  --gradient-hero-sky: linear-gradient(#d2e5ff, #fff9ee);
 
   /* Typography — Font Families */
-  --font-ozik: 'Ozik', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-aeonik: 'Aeonik', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-instrument-serif: 'Instrument Serif', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-apple-system-blinkmacsystemfont-inter-segoe-ui-sans-serif: '-apple-system, BlinkMacSystemFont, Inter, "Segoe UI", sans-serif', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 
   /* Typography — Scale */
   --text-caption: 12px;
-  --leading-caption: 1.5;
-  --tracking-caption: -0.036px;
-  --text-body: 14px;
-  --leading-body: 1.5;
-  --tracking-body: -0.042px;
-  --text-body-md: 16px;
-  --leading-body-md: 1.5;
-  --tracking-body-md: -0.496px;
-  --text-subheading: 18px;
-  --leading-subheading: 1.5;
-  --tracking-subheading: -0.378px;
-  --text-heading-sm: 20px;
-  --leading-heading-sm: 1.43;
-  --tracking-heading-sm: -0.3px;
-  --text-heading: 24px;
-  --leading-heading: 1.33;
-  --tracking-heading: -0.36px;
-  --text-heading-lg: 32px;
-  --leading-heading-lg: 1.2;
-  --tracking-heading-lg: -0.672px;
-  --text-display: 40px;
-  --leading-display: 1.2;
-  --tracking-display: -1.24px;
-  --text-display-xl: 56px;
-  --leading-display-xl: 0.86;
-  --tracking-display-xl: -0.784px;
-  --text-display-2xl: 80px;
-  --leading-display-2xl: 0.9;
-  --tracking-display-2xl: -0.8px;
+  --leading-caption: 1.1;
+  --tracking-caption: 0px;
+  --text-nav: 16px;
+  --leading-nav: 1.4;
+  --tracking-nav: 0px;
+  --text-brand-nav: 18px;
+  --leading-brand-nav: 1.4;
+  --tracking-brand-nav: 0.162px;
+  --text-body: 24px;
+  --leading-body: 1.3;
+  --tracking-body: 0px;
+  --text-section-label: 24px;
+  --leading-section-label: 0.9;
+  --tracking-section-label: -0.24px;
+  --text-card-heading: 40px;
+  --leading-card-heading: 1;
+  --tracking-card-heading: -1.2px;
+  --text-display: 64px;
+  --leading-display: 1;
+  --tracking-display: -1.92px;
+  --text-hero-display: 80px;
+  --leading-hero-display: 1;
+  --tracking-hero-display: -2.4px;
 
   /* Typography — Weights */
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
-  --font-weight-bold: 700;
 
   /* Spacing */
   --spacing-unit: 8px;
@@ -330,47 +279,40 @@ EXAMPLE COMPONENT PROMPTS
   --spacing-32: 32px;
   --spacing-40: 40px;
   --spacing-48: 48px;
-  --spacing-56: 56px;
-  --spacing-64: 64px;
   --spacing-80: 80px;
-  --spacing-128: 128px;
-  --spacing-168: 168px;
-  --spacing-240: 240px;
+  --spacing-96: 96px;
+  --spacing-160: 160px;
 
   /* Layout */
-  --page-max-width: 1200px;
-  --section-gap: 80-120px;
-  --card-padding: 24-40px;
-  --element-gap: 8-16px;
+  --section-gap: 80px;
+  --card-padding: 32px;
+  --element-gap: 16px;
 
   /* Border Radius */
-  --radius-lg: 8px;
-  --radius-xl: 12px;
   --radius-2xl: 16px;
-  --radius-2xl-2: 20px;
   --radius-3xl: 24px;
-  --radius-3xl-2: 28px;
-  --radius-3xl-3: 32px;
-  --radius-3xl-4: 40px;
-  --radius-full: 48px;
-  --radius-full-2: 64px;
-  --radius-full-3: 80px;
-  --radius-full-4: 100px;
+  --radius-3xl-2: 32px;
+  --radius-full: 128px;
+  --radius-full-2: 9999px;
 
   /* Named Radii */
-  --radius-nav: 28px;
-  --radius-cards: 16-24px;
-  --radius-badges: 20-40px;
-  --radius-inputs: 24px;
-  --radius-buttons: 8px (compact) or 28px (pill);
-  --radius-heroorb: 9999px;
+  --radius-cards: 24-32px;
+  --radius-pills: 9999px;
+  --radius-images: 16-24px;
+  --radius-buttons: 128px;
+  --radius-navigation: 32px;
+
+  /* Shadows */
+  --shadow-md: rgba(0, 0, 0, 0.25) 0px 0px 16px -8px;
+  --shadow-subtle: rgb(255, 255, 255) 0px 1px 0px 0px inset, rgba(255, 255, 255, 0.25) 0px 0px 4px 0px inset;
+  --shadow-lg: rgb(255, 255, 255) 0px 0px 24px 0px inset;
+  --shadow-md-2: rgba(0, 0, 0, 0.15) 0px 2px 16px 0px;
+  --shadow-subtle-2: rgba(255, 255, 255, 0.36) 0px 1px 0px 0px inset;
 
   /* Surfaces */
-  --surface-forest-depths-canvas: #122314;
-  --surface-pure-white-page: #ffffff;
-  --surface-bone-white-card: #f2f5eb;
-  --surface-sprout-wash-chip: #e7f9dd;
-  --surface-electric-sprout-accent: #68ef3f;
+  --surface-paper-white: #ffffff;
+  --surface-cloud-card: #ebf0f8;
+  --surface-charcoal: #1f2025;
 }
 ```
 
@@ -379,57 +321,46 @@ EXAMPLE COMPONENT PROMPTS
 ```css
 @theme {
   /* Colors */
-  --color-forest-depths: #122314;
-  --color-moss-shadow: #273f2b;
-  --color-lichen-sage: #7e8371;
-  --color-pale-fern: #b7bda5;
-  --color-electric-sprout: #68ef3f;
-  --color-deep-verdant: #26a200;
-  --color-sprout-wash: #e7f9dd;
-  --color-mist-green: #d9deca;
-  --color-onyx-olive: #30322a;
-  --color-pure-white: #ffffff;
-  --color-bone-white: #f2f5eb;
-  --color-soft-mist: #dcdfe3;
-  --color-cool-stone: #d6d6d6;
-  --color-carbon: #222222;
+  --color-paper-white: #ffffff;
+  --color-charcoal: #1f2025;
+  --color-ink: #222326;
+  --color-cloud-card: #ebf0f8;
+  --color-body-gray: #747679;
+  --color-signal-gold: #ffca00;
+  --color-coral-signal: #ffab94;
+  --color-recovery-green: #31ce01;
+  --color-metric-blue: #415eee;
+  --color-sleep-lilac: #b9a6ff;
+  --color-hero-sky: #d2e5ff;
 
   /* Typography */
-  --font-ozik: 'Ozik', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-aeonik: 'Aeonik', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-instrument-serif: 'Instrument Serif', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-apple-system-blinkmacsystemfont-inter-segoe-ui-sans-serif: '-apple-system, BlinkMacSystemFont, Inter, "Segoe UI", sans-serif', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 
   /* Typography — Scale */
   --text-caption: 12px;
-  --leading-caption: 1.5;
-  --tracking-caption: -0.036px;
-  --text-body: 14px;
-  --leading-body: 1.5;
-  --tracking-body: -0.042px;
-  --text-body-md: 16px;
-  --leading-body-md: 1.5;
-  --tracking-body-md: -0.496px;
-  --text-subheading: 18px;
-  --leading-subheading: 1.5;
-  --tracking-subheading: -0.378px;
-  --text-heading-sm: 20px;
-  --leading-heading-sm: 1.43;
-  --tracking-heading-sm: -0.3px;
-  --text-heading: 24px;
-  --leading-heading: 1.33;
-  --tracking-heading: -0.36px;
-  --text-heading-lg: 32px;
-  --leading-heading-lg: 1.2;
-  --tracking-heading-lg: -0.672px;
-  --text-display: 40px;
-  --leading-display: 1.2;
-  --tracking-display: -1.24px;
-  --text-display-xl: 56px;
-  --leading-display-xl: 0.86;
-  --tracking-display-xl: -0.784px;
-  --text-display-2xl: 80px;
-  --leading-display-2xl: 0.9;
-  --tracking-display-2xl: -0.8px;
+  --leading-caption: 1.1;
+  --tracking-caption: 0px;
+  --text-nav: 16px;
+  --leading-nav: 1.4;
+  --tracking-nav: 0px;
+  --text-brand-nav: 18px;
+  --leading-brand-nav: 1.4;
+  --tracking-brand-nav: 0.162px;
+  --text-body: 24px;
+  --leading-body: 1.3;
+  --tracking-body: 0px;
+  --text-section-label: 24px;
+  --leading-section-label: 0.9;
+  --tracking-section-label: -0.24px;
+  --text-card-heading: 40px;
+  --leading-card-heading: 1;
+  --tracking-card-heading: -1.2px;
+  --text-display: 64px;
+  --leading-display: 1;
+  --tracking-display: -1.92px;
+  --text-hero-display: 80px;
+  --leading-hero-display: 1;
+  --tracking-hero-display: -2.4px;
 
   /* Spacing */
   --spacing-8: 8px;
@@ -438,25 +369,22 @@ EXAMPLE COMPONENT PROMPTS
   --spacing-32: 32px;
   --spacing-40: 40px;
   --spacing-48: 48px;
-  --spacing-56: 56px;
-  --spacing-64: 64px;
   --spacing-80: 80px;
-  --spacing-128: 128px;
-  --spacing-168: 168px;
-  --spacing-240: 240px;
+  --spacing-96: 96px;
+  --spacing-160: 160px;
 
   /* Border Radius */
-  --radius-lg: 8px;
-  --radius-xl: 12px;
   --radius-2xl: 16px;
-  --radius-2xl-2: 20px;
   --radius-3xl: 24px;
-  --radius-3xl-2: 28px;
-  --radius-3xl-3: 32px;
-  --radius-3xl-4: 40px;
-  --radius-full: 48px;
-  --radius-full-2: 64px;
-  --radius-full-3: 80px;
-  --radius-full-4: 100px;
+  --radius-3xl-2: 32px;
+  --radius-full: 128px;
+  --radius-full-2: 9999px;
+
+  /* Shadows */
+  --shadow-md: rgba(0, 0, 0, 0.25) 0px 0px 16px -8px;
+  --shadow-subtle: rgb(255, 255, 255) 0px 1px 0px 0px inset, rgba(255, 255, 255, 0.25) 0px 0px 4px 0px inset;
+  --shadow-lg: rgb(255, 255, 255) 0px 0px 24px 0px inset;
+  --shadow-md-2: rgba(0, 0, 0, 0.15) 0px 2px 16px 0px;
+  --shadow-subtle-2: rgba(255, 255, 255, 0.36) 0px 1px 0px 0px inset;
 }
 ```
